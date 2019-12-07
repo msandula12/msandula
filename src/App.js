@@ -5,6 +5,7 @@ import './App.css';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Logo from './components/Logo';
 
 import About from './views/About';
 import Resume from './views/Resume';
@@ -16,7 +17,10 @@ const App = () => {
         <Header />
         <div className="flex-1">
           <Switch>
-            <Route path="/about" component={About} />
+            <Route exact path="/" component={Logo} />
+          </Switch>
+          <Switch>
+            <Route exact path="/about" component={About} />
           </Switch>
           <Switch>
             <Route path="/resume" component={Resume} />
