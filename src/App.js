@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <code>Mike Sandula // Software Developer</code>
-      </header>
+      <Header />
+      <div className="flex-1">{/* TODO - content */}</div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

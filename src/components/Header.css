@@ -1,0 +1,50 @@
+header {
+  justify-content: center;
+  font-size: calc(36px + 2vmin);
+  padding: 20px 0;
+}
+
+.code {
+  font-family: Monospace;
+}
+
+.code-field {
+  color: #9cdcfe;
+}
+
+.code-singleLineComment {
+  color: #608b4e;
+}
+
+.code-keyword {
+  color: #569cd6;
+}
+
+.code-class {
+  color: #4ec9b0;
+}
+
+.code-operator {
+  color: #d8d8d8;
+}
+
+.navigation {
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 16px;
+  color: #d8d8d8;
+  margin: 20px 40px;
+  box-sizing: border-box;
+  border-bottom: 2px dashed #d8d8d8;
+  border-top: 2px dashed #d8d8d8;
+}
+
+.nav-link:hover,
+.nav-link-active {
+  color: white;
+  cursor: pointer;
+}
+
+.separator {
+  margin: 0 10px;
+}
