@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Header.css';
 
 const Header = () => {
@@ -15,9 +17,13 @@ const Header = () => {
         <span className="code-field">{'}'}</span>
       </div>
       <div className="navigation">
-        <span className="nav-link-active">About</span>
+        <Link to="/about" className="nav-link">
+          About
+        </Link>
         <span className="separator">|</span>
-        <span className="nav-link">Resume</span>
+        <Link to="/resume" className="nav-link">
+          Resume
+        </Link>
       </div>
     </header>
   );
