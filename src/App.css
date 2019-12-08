@@ -19,3 +19,89 @@ a {
 h1 {
   color: white;
 }
+
+/* LANDING */
+.landing {
+  background: #2a2a2a;
+  position: relative;
+  width: 100%;
+}
+
+.landing-logo {
+  font-size: calc(36px + 2vmin);
+}
+
+.scroll-down {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  right: 0;
+  padding: 36px;
+}
+
+.arrow {
+  font-size: 36px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  text-shadow: 0 0 8px white;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+/* GENERAL */
+.my-app {
+  max-width: 100vw;
+  box-sizing: border-box;
+  font-family: monaco, Monospace;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 600px;
+  font-size: 18px;
+}
+
+.code-field {
+  color: #9cdcfe;
+}
+
+.code-singleLineComment {
+  color: #608b4e;
+}
+
+.code-keyword {
+  color: #569cd6;
+}
+
+.code-class {
+  color: #4ec9b0;
+}
+
+.code-operator {
+  color: #d8d8d8;
+}
+
+/* ABOUT */
+.about {
+  background: #4ec9b0;
+  color: white;
+}
+
+/* RESUME */
+.resume {
+  background: #2a2a2a;
+  color: white;
+}
