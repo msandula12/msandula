@@ -5,10 +5,12 @@ import './App.css';
 import { ResumeText } from './Text';
 
 const App = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div className="my-app">
       {/* LANDING */}
-      <div id="home" className="page landing">
+      <div id="/home" className="page landing">
         <div className="landing-logo">
           <div className="my-name">
             <span className="code-operator">{'<'}</span>
@@ -21,15 +23,38 @@ const App = () => {
             <span className="code-field">{'}'}</span>
           </div>
         </div>
-        <div className="scroll-down arrow-down">
-          <a className="arrow" href="#about">
-            {'>'}
-          </a>
+        <div className="scroll-down arrow arrow-down">
+          <a href="#/about">{'>'}</a>
         </div>
       </div>
 
+      {/* HEADER */}
+      <header className="header">
+        <div className="flex-1">
+          <div className="my-name">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'MikeSandula'}</span>
+            <span className="code-operator">{' /> '}</span>
+            <span className="code-field">{'{'}</span>
+            <span className="code-singleLineComment">
+              {'/* Software Developer */'}
+            </span>
+            <span className="code-field">{'}'}</span>
+          </div>
+        </div>
+        <div className="nav">
+          <a href="#/about">About</a>
+          <a href="#/resume">Resume</a>
+        </div>
+        <div className="flex-1 scroll-up">
+          <div className="arrow arrow-up">
+            <a href="#/home">{'>'}</a>
+          </div>
+        </div>
+      </header>
+
       {/* ABOUT */}
-      <div id="about" className="page about">
+      <div id="/about" className="page about">
         <div>
           <h1>About</h1>
           <div className="content">
@@ -38,6 +63,7 @@ const App = () => {
               in Journalism in 2010, Mike Sandula worked as a copy editor for
               several newspapers in Southeast Michigan.
             </p>
+            {/* Add paragraph about WHY I made the switch */}
             <p>
               In 2016, Mike attended the Front-End Bootcamp at Grand Circus in
               Detroit and made the switch to programming, where his background
@@ -57,7 +83,7 @@ const App = () => {
       </div>
 
       {/* RESUME */}
-      <div id="resume" className="page resume">
+      <div id="/resume" className="page resume">
         <div>
           <h1>Resume</h1>
           <div className="content">
@@ -68,8 +94,8 @@ const App = () => {
         </div>
       </div>
 
-      {/* HEADER */}
-      <div className="header"></div>
+      {/* FOOTER */}
+      <footer>Copyright &copy;{year} Mike Sandula</footer>
     </div>
   );
 };

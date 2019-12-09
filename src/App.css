@@ -72,21 +72,38 @@ h1 {
   color: white;
   bottom: 0;
   right: 0;
-  padding: 36px;
+  margin: 16px;
 }
+
+/* .scroll-up {
+  text-align: right;
+} */
 
 .arrow {
   font-size: 36px;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-down a {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
-.arrow:hover {
+.arrow-down a:hover {
   cursor: pointer;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .arrow-down {
   transform: rotate(90deg);
+}
+
+.arrow-up {
+  transform: rotate(270deg);
+  float: right;
 }
 
 /* ABOUT */
@@ -99,4 +116,52 @@ h1 {
 .resume {
   background: #2a2a2a;
   color: white;
+}
+
+/* HEADER */
+header {
+  background: #2a2a2a;
+  padding: 16px;
+  display: flex;
+  color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+header .box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header .box.right {
+  text-align: right;
+}
+
+.box:first-child > span {
+  margin-right: auto;
+}
+
+.box:last-child > span {
+  margin-left: auto;
+}
+
+header .nav a {
+  padding: 8px 24px;
+  font-size: 24px;
+}
+
+header .nav a.active {
+  border-bottom: 2px solid white;
+}
+
+/* FOOTER */
+footer {
+  background: #2a2a2a;
+  text-align: center;
+  padding: 8px;
+  color: #d8d8d8;
+  font-size: 12px;
 }
