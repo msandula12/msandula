@@ -23,7 +23,7 @@ const App = () => {
             <span className="code-field">{'}'}</span>
           </div>
         </div>
-        <div className="scroll-down arrow arrow-down">
+        <div className="scroll-down arrow rotate-90">
           <a href="#/about">{'>'}</a>
         </div>
       </div>
@@ -47,8 +47,8 @@ const App = () => {
           <a href="#/resume">Resume</a>
         </div>
         <div className="flex-1 scroll-up">
-          <div className="arrow arrow-up">
-            <a href="#/home">{'>'}</a>
+          <div className="arrow rotate-90 float-right">
+            <a href="#/home">{'<'}</a>
           </div>
         </div>
       </header>

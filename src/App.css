@@ -88,6 +88,10 @@ h1 {
   align-items: center;
 }
 
+.arrow a {
+  width: 50%;
+}
+
 .arrow-down a {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
@@ -97,12 +101,11 @@ h1 {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-.arrow-down {
+.rotate-90 {
   transform: rotate(90deg);
 }
 
-.arrow-up {
-  transform: rotate(270deg);
+.float-right {
   float: right;
 }
 
