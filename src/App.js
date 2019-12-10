@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 
@@ -6,6 +6,10 @@ import { ResumeText } from './Text';
 
 const App = () => {
   const year = new Date().getFullYear();
+
+  const [page, setPage] = useState('');
+
+  console.log(window.location.href);
 
   return (
     <div className="my-app">
@@ -24,7 +28,9 @@ const App = () => {
           </div>
         </div>
         <div className="scroll-down arrow rotate-90">
-          <a href="#/about">{'>'}</a>
+          <a href="#/about" onClick={() => setPage('about')}>
+            {'>'}
+          </a>
         </div>
       </div>
 
@@ -43,12 +49,26 @@ const App = () => {
           </div>
         </div>
         <div className="nav">
-          <a href="#/about">About</a>
-          <a href="#/resume">Resume</a>
+          <a
+            href="#/about"
+            onClick={() => setPage('about')}
+            className={page === 'about' ? 'active' : ''}
+          >
+            About
+          </a>
+          <a
+            href="#/resume"
+            onClick={() => setPage('resume')}
+            className={page === 'resume' ? 'active' : ''}
+          >
+            Resume
+          </a>
         </div>
         <div className="flex-1 scroll-up">
           <div className="arrow rotate-90 float-right">
-            <a href="#/home">{'<'}</a>
+            <a href="#/home" onClick={() => setPage('home')}>
+              {'<'}
+            </a>
           </div>
         </div>
       </header>
