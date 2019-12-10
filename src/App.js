@@ -5,11 +5,9 @@ import './App.css';
 import { ResumeText } from './Text';
 
 const App = () => {
-  const year = new Date().getFullYear();
-
   const [page, setPage] = useState('');
 
-  console.log(window.location.href);
+  const year = new Date().getFullYear();
 
   return (
     <div className="my-app">
