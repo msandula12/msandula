@@ -4,11 +4,11 @@ import './App.css';
 
 import { ResumeText } from './Text';
 
+import Footer from './components/Footer';
+
 const App = () => {
   const [page, setPage] = useState('');
   const [shouldShowHeader, setShouldShowHeader] = useState(false);
-
-  const year = new Date().getFullYear();
 
   const homePage = createRef();
 
@@ -132,7 +132,7 @@ const App = () => {
       </div>
 
       {/* FOOTER */}
-      <footer>Copyright &copy;{year} Mike Sandula</footer>
+      <Footer />
     </div>
   );
 };

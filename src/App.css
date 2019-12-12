@@ -155,12 +155,3 @@ header .nav a {
 header .nav a.active {
   border-bottom: 2px solid white;
 }
-
-/* FOOTER */
-footer {
-  background: #2a2a2a;
-  text-align: center;
-  padding: 8px;
-  color: #d8d8d8;
-  font-size: 12px;
-}
