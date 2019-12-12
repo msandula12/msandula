@@ -2,9 +2,9 @@ import React, { createRef, useEffect, useState } from 'react';
 
 import './App.css';
 
-import { ResumeText } from './Text';
-
+import About from './components/About';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 const App = () => {
   const [page, setPage] = useState('');
@@ -91,44 +91,13 @@ const App = () => {
       )}
 
       {/* ABOUT */}
-      <div id="/about" className="page about">
-        <div>
-          <h1>About</h1>
-          <div className="content">
-            <p>
-              After graduating from Oakland University with a Bachelor of Arts
-              in Journalism in 2010, Mike Sandula worked as a copy editor for
-              several newspapers in Southeast Michigan.
-            </p>
-            {/* Add paragraph about WHY I made the switch */}
-            <p>
-              In 2016, Mike attended the Front-End Bootcamp at Grand Circus in
-              Detroit and made the switch to programming, where his background
-              as a copy editor has proven handy in identifying bugs and
-              maintaining clean code.
-            </p>
-            <p>
-              Mike specializes in building front-ends for large web
-              applications.
-            </p>
-            <p>
-              When he's not behind a computer, Mike can be found behind his drum
-              set, behind a book, or beside his wife and their cat, Ziggy.
-            </p>
-          </div>
-        </div>
+      <div id="/about">
+        <About />
       </div>
 
       {/* RESUME */}
-      <div id="/resume" className="page resume">
-        <div>
-          <h1>Resume</h1>
-          <div className="content">
-            <pre>
-              <code>{ResumeText}</code>
-            </pre>
-          </div>
-        </div>
+      <div id="/resume">
+        <Resume />
       </div>
 
       {/* FOOTER */}
