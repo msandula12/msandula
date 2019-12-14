@@ -23,26 +23,6 @@ body * {
   font-size: 18px;
 }
 
-.code-field {
-  color: #9cdcfe;
-}
-
-.code-singleLineComment {
-  color: #608b4e;
-}
-
-.code-keyword {
-  color: #569cd6;
-}
-
-.code-class {
-  color: #4ec9b0;
-}
-
-.code-operator {
-  color: #d8d8d8;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -54,6 +34,183 @@ a {
 
 h1 {
   color: white;
+}
+
+/* CODE COLORS */
+.code-abstractMethod {
+  color: var(--code-abstractMethod);
+}
+
+.code-annotation {
+  color: var(--code-annotation);
+}
+
+.code-background {
+  color: var(--code-background);
+}
+
+.code-bracket {
+  color: var(--code-bracket);
+}
+
+.code-class {
+  color: var(--code-class);
+}
+
+.code-commentTaskTag {
+  color: var(--code-commentTaskTag);
+}
+
+.code-constant {
+  color: var(--code-constant);
+}
+
+.code-currentLine {
+  color: var(--code-currentLine);
+}
+
+.code-deletionIndication {
+  color: var(--code-deletionIndication);
+}
+
+.code-deprecatedMember {
+  color: var(--code-deprecatedMember);
+}
+
+.code-enum {
+  color: var(--code-enum);
+}
+
+.code-field {
+  color: var(--code-field);
+}
+
+.code-filteredSearchResultIndication {
+  color: var(--code-filteredSearchResultIndication);
+}
+
+.code-findScope {
+  color: var(--code-findScope);
+}
+
+.code-foreground {
+  color: var(--code-foreground);
+}
+
+.code-inheritedMethod {
+  color: var(--code-inheritedMethod);
+}
+
+.code-interface {
+  color: var(--code-interface);
+}
+
+.code-javadoc {
+  color: var(--code-javadoc);
+}
+
+.code-javadocKeyword {
+  color: var(--code-javadocKeyword);
+}
+
+.code-javadocLink {
+  color: var(--code-javadocLink);
+}
+
+.code-javadocTag {
+  color: var(--code-javadocTag);
+}
+
+.code-keyword {
+  color: var(--code-keyword);
+}
+
+.code-lineNumber {
+  color: var(--code-lineNumber);
+}
+
+.code-localVariable {
+  color: var(--code-localVariable);
+}
+
+.code-localVariableDeclaration {
+  color: var(--code-localVariableDeclaration);
+}
+
+.code-method {
+  color: var(--code-method);
+}
+
+.code-methodDeclaration {
+  color: var(--code-methodDeclaration);
+}
+
+.code-multiLineComment {
+  color: var(--code-multiLineComment);
+}
+
+.code-number {
+  color: var(--code-number);
+}
+
+.code-occurrenceIndication {
+  color: var(--code-occurrenceIndication);
+}
+
+.code-operator {
+  color: var(--code-operator);
+}
+
+.code-parameterVariable {
+  color: var(--code-parameterVariable);
+}
+
+.code-searchResultIndication {
+  color: var(--code-searchResultIndication);
+}
+
+.code-selectionBackground {
+  color: var(--code-selectionBackground);
+}
+
+.code-selectionForeground {
+  color: var(--code-selectionForeground);
+}
+
+.code-singleLineComment {
+  color: var(--code-singleLineComment);
+}
+
+.code-sourceHoverBackground {
+  color: var(--code-sourceHoverBackground);
+}
+
+.code-staticField {
+  color: var(--code-staticField);
+}
+
+.code-staticFinalField {
+  color: var(--code-staticFinalField);
+}
+
+.code-staticMethod {
+  color: var(--code-staticMethod);
+}
+
+.code-string {
+  color: var(--code-string);
+}
+
+.code-typeArgument {
+  color: var(--code-typeArgument);
+}
+
+.code-typeParameter {
+  color: var(--code-typeParameter);
+}
+
+.code-writeOccurrenceIndication {
+  color: var(--code-writeOccurrenceIndication);
 }
 
 /* LANDING */
