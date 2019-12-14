@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7dbe06ae1b7c10f0def456be86ec4b4",
+    "revision": "32ef2b328ec1764f3799b5ca157a15ed",
     "url": "/msandula/index.html"
   },
   {
-    "revision": "d2ad0015c11aa659e95f",
-    "url": "/msandula/static/css/main.6e691b89.chunk.css"
+    "revision": "8397470315b3a573870c",
+    "url": "/msandula/static/css/main.852a9929.chunk.css"
   },
   {
     "revision": "68ba645ac4c958c1d474",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/msandula/static/js/2.2aa619bc.chunk.js.LICENSE"
   },
   {
-    "revision": "d2ad0015c11aa659e95f",
-    "url": "/msandula/static/js/main.cf7dbe11.chunk.js"
+    "revision": "8397470315b3a573870c",
+    "url": "/msandula/static/js/main.e2325a60.chunk.js"
   },
   {
     "revision": "df729c8691e309ffb25e",
