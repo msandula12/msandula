@@ -36,6 +36,26 @@ h1 {
   color: white;
 }
 
+.indented-1 {
+  margin-left: 20px;
+}
+
+.indented-2 {
+  margin-left: 40px;
+}
+
+.indented-3 {
+  margin-left: 60px;
+}
+
+.indented-4 {
+  margin-left: 80px;
+}
+
+.indented-5 {
+  margin-left: 100px;
+}
+
 /* CODE COLORS */
 .code-abstractMethod {
   color: var(--code-abstractMethod);

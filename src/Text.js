@@ -4,23 +4,6 @@ export const ResumeText = `
   <Contact email="msandula@gmail.com" />
   <GitHub userName="msandula12" />
   <LinkedIn userName="MikeSandula" />
-  <Section title="Education">
-    <Education
-      place="Grand Circus"
-      location="Detroit, Mich."
-      graduated="March 2016"
-    >
-      <Description>JavaScript Developer Bootcamp</Description>
-    </Education>
-    <Education
-      place="Oakland University"
-      location="Rochester, Mich."
-      graduated="December 2016"
-    >
-      <Description>Bachelor of Arts in Journalism, GPA 3.6</Description>
-      <Description>Cum Laude with departmental honors</Description>
-    </Education>
-  </Section>
   <Skills 
     skills="[
       'Angular 2+', 
@@ -39,7 +22,24 @@ export const ResumeText = `
       'D3.js', 
       'Adobe XD'
     ]" 
-  />
+  />  
+  <Section title="Education">
+    <Education
+      place="Grand Circus"
+      location="Detroit, Mich."
+      graduated="March 2016"
+    >
+      <Description>JavaScript Developer Bootcamp</Description>
+    </Education>
+    <Education
+      place="Oakland University"
+      location="Rochester, Mich."
+      graduated="December 2010"
+    >
+      <Description>Bachelor of Arts in Journalism, GPA 3.6</Description>
+      <Description>Cum Laude with departmental honors</Description>
+    </Education>
+  </Section>
   <Section title="Experience">
     <Job
       isCurrent
@@ -99,7 +99,7 @@ export const ResumeText = `
     >
       <Description>
         Designed, proofed and finalized the print products for eight daily
-        broadsheets plus a handful of weekly Michigan and New York
+        broadsheets, plus a handful of weekly Michigan and New York
         newspapers
       </Description>
     </Job>
