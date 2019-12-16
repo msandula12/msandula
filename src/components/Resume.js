@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import { ResumeText } from '../Text';
-
 import './Resume.css';
 
 const Resume = () => {
@@ -537,10 +535,20 @@ const Resume = () => {
             <span className="code-class">{'Resume'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
-          {/* <pre>
-            <code>{ResumeText}</code>
-          </pre> */}
         </div>
+      </div>
+
+      {/* VIEW/DOWNLOAD RESUME AS PDF */}
+      <div
+        className="download-pdf"
+        onClick={() =>
+          window.open(
+            require('../assets/files/mike-sandula-resume.pdf'),
+            '_none'
+          )
+        }
+      >
+        View as PDF
       </div>
     </div>
   );
