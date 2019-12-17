@@ -16,7 +16,7 @@ const Resume = () => {
       }
       const rect = resumePage.current.getBoundingClientRect();
       const { top } = rect;
-      setShowPDFButton(top < 0);
+      setShowPDFButton(top < 1);
     };
     window.addEventListener('scroll', determineIfShouldShowResumeButton);
     return () =>
