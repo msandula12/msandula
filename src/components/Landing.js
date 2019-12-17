@@ -2,7 +2,7 @@ import React from 'react';
 
 import { usePageDispatch } from '../context/PageContext';
 
-// import './Landing.css';
+import './Landing.css';
 
 const Landing = () => {
   const dispatch = usePageDispatch();
@@ -10,7 +10,7 @@ const Landing = () => {
   return (
     <div className="page landing">
       <div className="landing-logo">
-        <div className="my-name">
+        <div>
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
           <span className="code-operator">{' /> '}</span>

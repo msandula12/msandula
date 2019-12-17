@@ -2,6 +2,8 @@ import React, { createRef, useEffect, useState } from 'react';
 
 import './Resume.css';
 
+import DownloadPDFButton from './DownloadPDFButton';
+
 const Resume = () => {
   const [showPDFButton, setShowPDFButton] = useState(false);
   const resumePage = createRef();
@@ -557,19 +559,7 @@ const Resume = () => {
       </div>
 
       {/* VIEW/DOWNLOAD RESUME AS PDF */}
-      {showPDFButton && (
-        <div
-          className="download-pdf"
-          onClick={() =>
-            window.open(
-              require('../assets/files/mike-sandula-resume.pdf'),
-              '_none'
-            )
-          }
-        >
-          View as PDF
-        </div>
-      )}
+      {showPDFButton && <DownloadPDFButton />}
     </div>
   );
 };

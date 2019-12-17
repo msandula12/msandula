@@ -2,7 +2,7 @@ import React from 'react';
 
 import { usePageDispatch, usePageState } from '../context/PageContext';
 
-// import './Header.css';
+import './Header.css';
 
 const Header = () => {
   const { page } = usePageState();
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header>
       <div className="flex-1">
-        <div className="my-name">
+        <div>
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
           <span className="code-operator">{' /> '}</span>

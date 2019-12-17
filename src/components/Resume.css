@@ -2,20 +2,3 @@
   background: #2a2a2a;
   color: white;
 }
-
-.download-pdf {
-  background: var(--code-class);
-  color: white;
-  padding: 16px;
-  border-radius: 8px;
-  position: fixed;
-  bottom: 64px;
-  right: 32px;
-  transition: transform 0.2s ease, box-shadow 0.4s ease;
-}
-
-.download-pdf:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.3);
-}
