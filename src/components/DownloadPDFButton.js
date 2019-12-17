@@ -1,5 +1,5 @@
 import React from 'react';
-import { animated, useSpring } from 'react-spring';
+import { animated, config, useSpring } from 'react-spring';
 
 import './DownloadPDFButton.css';
 
@@ -7,7 +7,8 @@ const DownloadPDFButton = () => {
   const springProps = useSpring({
     bottom: 32,
     opacity: 1,
-    from: { bottom: 0, opacity: 0 }
+    from: { bottom: 0, opacity: 0 },
+    config: config.gentle
   });
 
   return (
