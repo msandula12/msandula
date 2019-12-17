@@ -1,7 +1,6 @@
 .resume {
   background: #2a2a2a;
   color: white;
-  position: relative;
 }
 
 .download-pdf {
@@ -9,7 +8,7 @@
   color: white;
   padding: 16px;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   bottom: 64px;
   right: 32px;
   transition: transform 0.2s ease, box-shadow 0.4s ease;

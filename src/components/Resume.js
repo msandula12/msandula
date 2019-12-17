@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 
 import './Resume.css';
 
 const Resume = () => {
+  const [showPDFButton, setShowPDFButton] = useState(false);
+  const resumePage = createRef();
+
+  useEffect(() => {
+    const determineIfShouldShowResumeButton = () => {
+      if (!resumePage.current) {
+        setShowPDFButton(false);
+        return;
+      }
+      const rect = resumePage.current.getBoundingClientRect();
+      const { top } = rect;
+      setShowPDFButton(top < 0);
+    };
+    window.addEventListener('scroll', determineIfShouldShowResumeButton);
+    return () =>
+      window.removeEventListener('scroll', determineIfShouldShowResumeButton);
+  }, [resumePage]);
+
   return (
-    <div className="page resume">
+    <div ref={resumePage} className="page resume">
       <div>
         <h1>Resume</h1>
         <div className="content">
@@ -60,10 +78,10 @@ const Resume = () => {
             <span className="code-method">{'['}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">{'"Angular 2+",'}</span>
+            <span className="code-string">{'"React.js",'}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">{'"React.js",'}</span>
+            <span className="code-string">{'"Angular 2+",'}</span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"Vue.js",'}</span>
@@ -539,17 +557,19 @@ const Resume = () => {
       </div>
 
       {/* VIEW/DOWNLOAD RESUME AS PDF */}
-      <div
-        className="download-pdf"
-        onClick={() =>
-          window.open(
-            require('../assets/files/mike-sandula-resume.pdf'),
-            '_none'
-          )
-        }
-      >
-        View as PDF
-      </div>
+      {showPDFButton && (
+        <div
+          className="download-pdf"
+          onClick={() =>
+            window.open(
+              require('../assets/files/mike-sandula-resume.pdf'),
+              '_none'
+            )
+          }
+        >
+          View as PDF
+        </div>
+      )}
     </div>
   );
 };
