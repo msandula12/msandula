@@ -1,4 +1,5 @@
 import React, { createRef, useEffect, useState } from 'react';
+import { animated, useTransition } from 'react-spring';
 
 import './App.css';
 
@@ -30,6 +31,17 @@ const App = () => {
       window.removeEventListener('scroll', determineIfHomePageIsOutOfView);
   }, [homePage]);
 
+  const headerTransition = useTransition(shouldShowHeader, null, {
+    from: { height: 0, opacity: 0, position: 'relative', top: -64 },
+    enter: { height: 'auto', opacity: 1, position: 'sticky', top: 0 },
+    leave: {
+      height: 0,
+      opacity: 0,
+      position: 'relative',
+      top: -64
+    }
+  });
+
   return (
     <PageProvider>
       <div className="my-app">
@@ -39,7 +51,15 @@ const App = () => {
         </div>
 
         {/* HEADER */}
-        {shouldShowHeader && <Header />}
+        {/* {shouldShowHeader && <Header />} */}
+        {headerTransition.map(
+          ({ item, key, props }) =>
+            item && (
+              <animated.div key={key} style={props}>
+                <Header />
+              </animated.div>
+            )
+        )}
 
         {/* ABOUT */}
         <div id="/about">

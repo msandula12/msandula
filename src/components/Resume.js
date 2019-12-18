@@ -1,4 +1,5 @@
 import React, { createRef, useEffect, useState } from 'react';
+import { animated, config, useTransition } from 'react-spring';
 
 import './Resume.css';
 
@@ -22,6 +23,13 @@ const Resume = () => {
     return () =>
       window.removeEventListener('scroll', determineIfShouldShowResumeButton);
   }, [resumePage]);
+
+  const downloadPDFButtonTransition = useTransition(showPDFButton, null, {
+    from: { bottom: 0, right: 32, opacity: 0, position: 'fixed' },
+    enter: { bottom: 32, opacity: 1 },
+    leave: { bottom: 0, opacity: 0 },
+    config: config.gentle
+  });
 
   return (
     <div ref={resumePage} className="page resume">
@@ -559,7 +567,14 @@ const Resume = () => {
       </div>
 
       {/* VIEW/DOWNLOAD RESUME AS PDF */}
-      {showPDFButton && <DownloadPDFButton />}
+      {downloadPDFButtonTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <DownloadPDFButton />
+            </animated.div>
+          )
+      )}
     </div>
   );
 };
