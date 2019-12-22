@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .flex-1 {
   flex: 1;
 }

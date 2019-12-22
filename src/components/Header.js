@@ -1,11 +1,14 @@
 import React from 'react';
-import { usePageDispatch, usePageState } from '../context/PageContext';
 
 import './Header.css';
 
-const Header = () => {
-  const { page } = usePageState();
-  const dispatch = usePageDispatch();
+const Header = ({ activePage }) => {
+  const scrollToPage = (event, page) => {
+    event.preventDefault();
+    document.getElementById(`/${page}`).scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <header>
@@ -21,28 +24,25 @@ const Header = () => {
           <span className="code-field">{'}'}</span>
         </div>
       </div>
-      <div className="nav">
+      <nav className="nav">
         <a
           href="#/about"
-          onClick={() => dispatch({ type: 'setPage', value: 'about' })}
-          className={page === 'about' ? 'active' : ''}
+          onClick={e => scrollToPage(e, 'about')}
+          className={activePage === 'about' ? 'active' : ''}
         >
           About
         </a>
         <a
           href="#/resume"
-          onClick={() => dispatch({ type: 'setPage', value: 'resume' })}
-          className={page === 'resume' ? 'active' : ''}
+          onClick={e => scrollToPage(e, 'resume')}
+          className={activePage === 'resume' ? 'active' : ''}
         >
           Resume
         </a>
-      </div>
+      </nav>
       <div className="flex-1 scroll-up">
         <div className="arrow rotate-90 float-right">
-          <a
-            href="#/home"
-            onClick={() => dispatch({ type: 'setPage', value: 'home' })}
-          >
+          <a href="#/home" onClick={e => scrollToPage(e, 'home')}>
             {'<'}
           </a>
         </div>

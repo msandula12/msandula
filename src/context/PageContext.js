@@ -4,6 +4,7 @@ const PageStateContext = React.createContext();
 const PageDispatchContext = React.createContext();
 
 function pageReducer(state, action) {
+  console.log('page (state, new): ', state.page, action.value);
   switch (action.type) {
     case 'setPage': {
       return { ...state, page: action.value };

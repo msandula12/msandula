@@ -1,11 +1,14 @@
 import React from 'react';
 
-import { usePageDispatch } from '../context/PageContext';
-
 import './Landing.css';
 
 const Landing = () => {
-  const dispatch = usePageDispatch();
+  const scrollToPage = (event, page) => {
+    event.preventDefault();
+    document.getElementById(`/${page}`).scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <div className="page landing">
@@ -22,10 +25,7 @@ const Landing = () => {
         </div>
       </div>
       <div className="scroll-down arrow rotate-90">
-        <a
-          href="#/about"
-          onClick={() => dispatch({ type: 'setPage', value: 'about' })}
-        >
+        <a href="#/about" onClick={e => scrollToPage(e, 'about')}>
           {'>'}
         </a>
       </div>
