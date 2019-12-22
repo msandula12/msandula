@@ -1,15 +1,10 @@
 import React from 'react';
 
+import { scrollToPage } from '../utils/helpers';
+
 import './Header.css';
 
 const Header = ({ activePage }) => {
-  const scrollToPage = (event, page) => {
-    event.preventDefault();
-    document.getElementById(`/${page}`).scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <header>
       <div className="flex-1">
@@ -27,14 +22,14 @@ const Header = ({ activePage }) => {
       <nav className="nav">
         <a
           href="#/about"
-          onClick={e => scrollToPage(e, 'about')}
+          onClick={() => scrollToPage('about')}
           className={activePage === 'about' ? 'active' : ''}
         >
           About
         </a>
         <a
           href="#/resume"
-          onClick={e => scrollToPage(e, 'resume')}
+          onClick={() => scrollToPage('resume')}
           className={activePage === 'resume' ? 'active' : ''}
         >
           Resume
@@ -42,7 +37,7 @@ const Header = ({ activePage }) => {
       </nav>
       <div className="flex-1 scroll-up">
         <div className="arrow rotate-90 float-right">
-          <a href="#/home" onClick={e => scrollToPage(e, 'home')}>
+          <a href="#/home" onClick={() => scrollToPage('home')}>
             {'<'}
           </a>
         </div>

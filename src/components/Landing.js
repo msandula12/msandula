@@ -1,15 +1,10 @@
 import React from 'react';
 
+import { scrollToPage } from '../utils/helpers';
+
 import './Landing.css';
 
 const Landing = () => {
-  const scrollToPage = (event, page) => {
-    event.preventDefault();
-    document.getElementById(`/${page}`).scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <div className="page landing">
       <div className="landing-logo">
@@ -25,7 +20,7 @@ const Landing = () => {
         </div>
       </div>
       <div className="scroll-down arrow rotate-90">
-        <a href="#/about" onClick={e => scrollToPage(e, 'about')}>
+        <a href="#/about" onClick={() => scrollToPage('about')}>
           {'>'}
         </a>
       </div>
