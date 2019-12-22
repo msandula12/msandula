@@ -14,7 +14,7 @@ function pageReducer(state, action) {
   }
 }
 function PageProvider({ children }) {
-  const [state, dispatch] = React.useReducer(pageReducer, { page: 0 });
+  const [state, dispatch] = React.useReducer(pageReducer, { page: '' });
   return (
     <PageStateContext.Provider value={state}>
       <PageDispatchContext.Provider value={dispatch}>

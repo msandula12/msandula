@@ -46,12 +46,11 @@ const App = () => {
     <PageProvider>
       <div className="my-app">
         {/* LANDING */}
-        <div id="/home" ref={homePage}>
+        <section id="/home" ref={homePage}>
           <Landing />
-        </div>
+        </section>
 
         {/* HEADER */}
-        {/* {shouldShowHeader && <Header />} */}
         {headerTransition.map(
           ({ item, key, props }) =>
             item && (
@@ -62,14 +61,14 @@ const App = () => {
         )}
 
         {/* ABOUT */}
-        <div id="/about">
+        <section id="/about">
           <About />
-        </div>
+        </section>
 
         {/* RESUME */}
-        <div id="/resume">
+        <section id="/resume">
           <Resume />
-        </div>
+        </section>
 
         {/* FOOTER */}
         <Footer />
