@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f25d41420a2e9adfdd336e0de808d223",
+    "revision": "b3f0d208c630da69313a9261486b66ad",
     "url": "/msandula/index.html"
   },
   {
-    "revision": "c980b9c6d58b77dbf76d",
-    "url": "/msandula/static/css/main.c618d26f.chunk.css"
+    "revision": "7284cd3e55fd39af65a3",
+    "url": "/msandula/static/css/main.f20de45e.chunk.css"
   },
   {
-    "revision": "783c9cacb7c7e2586eaa",
-    "url": "/msandula/static/js/2.fc373426.chunk.js"
+    "revision": "8bc66101036c3a84a1da",
+    "url": "/msandula/static/js/2.4b4c2be1.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/msandula/static/js/2.fc373426.chunk.js.LICENSE"
+    "url": "/msandula/static/js/2.4b4c2be1.chunk.js.LICENSE"
   },
   {
-    "revision": "c980b9c6d58b77dbf76d",
-    "url": "/msandula/static/js/main.2e1fbdfb.chunk.js"
+    "revision": "7284cd3e55fd39af65a3",
+    "url": "/msandula/static/js/main.9899e49e.chunk.js"
   },
   {
     "revision": "df729c8691e309ffb25e",
