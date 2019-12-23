@@ -7,24 +7,6 @@ header {
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
-header .box {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-header .box.right {
-  text-align: right;
-}
-
-.box:first-child > span {
-  margin-right: auto;
-}
-
-.box:last-child > span {
-  margin-left: auto;
-}
-
 header .nav a {
   padding: 8px 24px;
   font-size: 24px;
