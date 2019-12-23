@@ -38,13 +38,15 @@ const App = () => {
         }
       ];
       const activePage = pages.reduce((acc, cur) => {
-        return cur.fromTop <= 1 && cur.fromTop > acc.fromTop ? cur : acc;
+        return Math.floor(cur.fromTop) <= 0 && cur.fromTop > acc.fromTop
+          ? cur
+          : acc;
       }).page;
       if (page !== activePage) {
         setPage(activePage);
+        setShouldShowHeader(activePage !== 'home');
         window.location.hash = `/${activePage}`;
       }
-      setShouldShowHeader(activePage !== 'home');
     };
 
     window.addEventListener('scroll', determineActivePage);
@@ -52,12 +54,16 @@ const App = () => {
   }, [page, homePage, aboutPage, resumePage]);
 
   const headerTransition = useTransition(shouldShowHeader, null, {
-    from: { height: 0, opacity: 0, position: 'relative', top: -64 },
-    enter: { height: 'auto', opacity: 1, position: 'sticky', top: 0 },
+    from: { opacity: 0, position: 'fixed', top: -64 },
+    enter: {
+      opacity: 1,
+      position: 'fixed',
+      top: 0,
+      width: '100%'
+    },
     leave: {
-      height: 0,
       opacity: 0,
-      position: 'relative',
+      position: 'fixed',
       top: -64
     }
   });
@@ -65,7 +71,7 @@ const App = () => {
   return (
     <div className="my-app">
       {/* LANDING */}
-      <section id="/home" ref={homePage}>
+      <section id="home" ref={homePage}>
         <Landing />
       </section>
 
@@ -80,12 +86,12 @@ const App = () => {
       )}
 
       {/* ABOUT */}
-      <section id="/about" ref={aboutPage}>
+      <section id="about" ref={aboutPage}>
         <About />
       </section>
 
       {/* RESUME */}
-      <section id="/resume" ref={resumePage}>
+      <section id="resume" ref={resumePage}>
         <Resume />
       </section>
 
