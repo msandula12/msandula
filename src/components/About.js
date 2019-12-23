@@ -13,7 +13,6 @@ const About = () => {
             Journalism in 2010, Mike Sandula worked as a copy editor for several
             newspapers in Southeast Michigan.
           </p>
-          {/* Add paragraph about WHY I made the switch */}
           <p>
             In 2016, Mike attended the Front-End Bootcamp at Grand Circus in
             Detroit and made the switch to programming, where his background as
