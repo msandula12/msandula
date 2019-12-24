@@ -4,6 +4,7 @@ import { animated, config, useTransition } from 'react-spring';
 import './Resume.css';
 
 import DownloadPDFButton from './DownloadPDFButton';
+import FadeInSection from './FadeInSection';
 
 const Resume = () => {
   const [showPDFButton, setShowPDFButton] = useState(false);
@@ -33,7 +34,7 @@ const Resume = () => {
 
   return (
     <div ref={resumePage} className="page resume">
-      <div>
+      <FadeInSection>
         <h1>Resume</h1>
         <div className="content">
           <div>
@@ -564,7 +565,7 @@ const Resume = () => {
             <span className="code-operator">{'>'}</span>
           </div>
         </div>
-      </div>
+      </FadeInSection>
 
       {/* VIEW/DOWNLOAD RESUME AS PDF */}
       {downloadPDFButtonTransition.map(

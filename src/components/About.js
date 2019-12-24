@@ -1,11 +1,13 @@
 import React from 'react';
 
+import FadeInSection from './FadeInSection';
+
 import './About.css';
 
 const About = () => {
   return (
     <div className="page about">
-      <div>
+      <FadeInSection>
         <h1>About</h1>
         <div className="content">
           <p>
@@ -27,7 +29,7 @@ const About = () => {
             set, behind a book, or beside his wife and their cat, Ziggy.
           </p>
         </div>
-      </div>
+      </FadeInSection>
     </div>
   );
 };

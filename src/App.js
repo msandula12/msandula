@@ -75,16 +75,6 @@ const App = () => {
         <Landing />
       </section>
 
-      {/* HEADER */}
-      {headerTransition.map(
-        ({ item, key, props }) =>
-          item && (
-            <animated.div key={key} style={props}>
-              <Header activePage={page} />
-            </animated.div>
-          )
-      )}
-
       {/* ABOUT */}
       <section id="about" ref={aboutPage}>
         <About />
@@ -97,6 +87,16 @@ const App = () => {
 
       {/* FOOTER */}
       <Footer />
+
+      {/* HEADER */}
+      {headerTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <Header activePage={page} />
+            </animated.div>
+          )
+      )}
     </div>
   );
 };
