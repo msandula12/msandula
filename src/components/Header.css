@@ -7,11 +7,22 @@ header {
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
-header .nav a {
-  padding: 8px 24px;
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  padding: 0 24px;
+  display: inline-block;
+  text-align: center;
   font-size: 24px;
 }
 
-header .nav a.active {
-  border-bottom: 2px solid white;
+nav hr {
+  height: 2px;
+  background: white;
+  border: none;
+  transition: 0.4s ease-in-out;
+  margin-top: 16px;
+  width: 50%;
 }

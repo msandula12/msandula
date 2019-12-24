@@ -5,6 +5,24 @@ import { scrollToPage } from '../utils/helpers';
 import './Header.css';
 
 const Header = ({ activePage }) => {
+  const pages = [
+    {
+      label: 'About',
+      page: 'about'
+    },
+    {
+      label: 'Resume',
+      page: 'resume'
+    }
+  ];
+
+  const getPositionOfUnderline = () => {
+    const index = activePage
+      ? pages.map(page => page.page).indexOf(activePage)
+      : 0;
+    return (100 / pages.length) * index;
+  };
+
   return (
     <header>
       <div className="flex-1">
@@ -19,21 +37,19 @@ const Header = ({ activePage }) => {
           <span className="code-field">{'}'}</span>
         </div>
       </div>
-      <nav className="nav">
-        <a
-          href="#/about"
-          onClick={() => scrollToPage('about')}
-          className={activePage === 'about' ? 'active' : ''}
-        >
-          About
-        </a>
-        <a
-          href="#/resume"
-          onClick={() => scrollToPage('resume')}
-          className={activePage === 'resume' ? 'active' : ''}
-        >
-          Resume
-        </a>
+      <nav>
+        {pages.map(page => (
+          <a
+            className={activePage === page.page ? 'active' : ''}
+            href={`#/${page.page}`}
+            key={page.page}
+            onClick={() => scrollToPage(page.page)}
+            style={{ width: `100 / ${pages.length}%` }}
+          >
+            {page.label}
+          </a>
+        ))}
+        <hr style={{ marginLeft: `${getPositionOfUnderline()}%` }} />
       </nav>
       <div className="flex-1 scroll-up">
         <div className="arrow rotate-90 float-right">
