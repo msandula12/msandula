@@ -40,7 +40,6 @@ const Header = ({ activePage }) => {
       <nav>
         {pages.map(page => (
           <a
-            className={activePage === page.page ? 'active' : ''}
             href={`#/${page.page}`}
             key={page.page}
             onClick={() => scrollToPage(page.page)}
