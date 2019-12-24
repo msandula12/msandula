@@ -18,11 +18,14 @@ const App = () => {
   const resumePage = createRef();
 
   useEffect(() => {
+    let lastScrollTop = 0;
     const getDistanceFromTop = ref => {
       return ref && ref.getBoundingClientRect().top;
     };
 
     const determineActivePage = () => {
+      const isScrollingUpwards = window.pageYOffset < lastScrollTop;
+
       const pages = [
         {
           page: 'home',
@@ -37,16 +40,26 @@ const App = () => {
           fromTop: getDistanceFromTop(resumePage.current)
         }
       ];
+
+      /**
+       * If scrolling upwards, pick the page whose `top` is closest to zero
+       * Otherwise, pick the page whose `top` is the biggest number
+       * less than or equal to zero
+       */
       const activePage = pages.reduce((acc, cur) => {
-        return Math.floor(cur.fromTop) <= 0 && cur.fromTop > acc.fromTop
+        return (isScrollingUpwards
+        ? Math.abs(cur.fromTop) < Math.abs(acc.fromTop)
+        : Math.floor(cur.fromTop) <= 0 && cur.fromTop > acc.fromTop)
           ? cur
           : acc;
       }).page;
+
       if (page !== activePage) {
         setPage(activePage);
         setShouldShowHeader(activePage !== 'home');
         window.location.hash = `/${activePage}`;
       }
+      lastScrollTop = window.pageYOffset;
     };
 
     window.addEventListener('scroll', determineActivePage);
