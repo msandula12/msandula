@@ -25,8 +25,8 @@ const About = () => {
             Mike specializes in building front-ends for large web applications.
           </p>
           <p>
-            When he's not behind a computer, Mike can be found behind his drum
-            set, behind a book, or beside his wife and their cat, Ziggy.
+            When he's not behind a computer, Mike can be found behind either his
+            drum set or a book, or beside his wife and their cat, Ziggy.
           </p>
         </div>
       </FadeInSection>
