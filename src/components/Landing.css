@@ -22,6 +22,22 @@
   animation-direction: normal;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .split {
+    display: inline-block;
+  }
+
+  .split:first-child {
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  .landing-logo {
+    font-size: 6vmin;
+  }
+}
+
 @keyframes wiggle {
   0% {
     bottom: 0;

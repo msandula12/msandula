@@ -12,14 +12,18 @@ const Landing = () => {
       <FadeInSection>
         <div className="landing-logo">
           <div>
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'MikeSandula'}</span>
-            <span className="code-operator">{' /> '}</span>
-            <span className="code-field">{'{'}</span>
-            <span className="code-singleLineComment">
-              {'/* Software Developer */'}
-            </span>
-            <span className="code-field">{'}'}</span>
+            <div className="split">
+              <span className="code-operator">{'<'}</span>
+              <span className="code-class">{'MikeSandula'}</span>
+              <span className="code-operator">{' /> '}</span>
+            </div>
+            <div className="split">
+              <span className="code-field">{' {'}</span>
+              <span className="code-singleLineComment">
+                {'/* Software Developer */'}
+              </span>
+              <span className="code-field">{'}'}</span>
+            </div>
           </div>
         </div>
       </FadeInSection>
