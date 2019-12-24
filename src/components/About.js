@@ -16,10 +16,11 @@ const About = () => {
             newspapers in Southeast Michigan.
           </p>
           <p>
-            In 2016, Mike attended the Front-End Bootcamp at Grand Circus in
-            Detroit and made the switch to programming, where his background as
-            a copy editor has proven handy in identifying bugs and maintaining
-            clean code.
+            In 2016, Mike channeled his lifelong love of problem-solving and
+            made the switch to programming, where his background as a copy
+            editor has proven handy in identifying bugs and maintaining clean
+            code. He attended the Front-End Bootcamp at Grand Circus in Detroit,
+            landing his first developer job shortly after.
           </p>
           <p>
             Mike specializes in building front-ends for large web applications.
