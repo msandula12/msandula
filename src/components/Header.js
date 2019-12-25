@@ -5,7 +5,7 @@ import { scrollToPage } from '../utils/helpers';
 import './Header.css';
 
 const Header = ({ activePage }) => {
-  const [canShowMenu, setCanShowMenu] = useState(true);
+  const [shouldShowMenu, setShouldShowMenu] = useState(true);
   const [isShowingMenu, setIsShowingMenu] = useState(true);
 
   const pages = [
@@ -20,10 +20,14 @@ const Header = ({ activePage }) => {
   ];
 
   const handlePageNav = page => {
-    if (canShowMenu && isShowingMenu) {
+    if (shouldShowMenu && isShowingMenu) {
       closeMenu();
     }
     scrollToPage(page);
+  };
+
+  const openMenu = () => {
+    setIsShowingMenu(true);
   };
 
   const closeMenu = () => {
@@ -40,6 +44,7 @@ const Header = ({ activePage }) => {
   return (
     <header>
       <div className="flex-1">
+        {/* LOGO */}
         <div>
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
@@ -51,7 +56,9 @@ const Header = ({ activePage }) => {
           <span className="code-field">{'}'}</span>
         </div>
       </div>
-      {!canShowMenu && (
+
+      {/* NAV - HEADER */}
+      {!shouldShowMenu && (
         <nav>
           {pages.map(page => (
             <a
@@ -66,18 +73,23 @@ const Header = ({ activePage }) => {
           <hr style={{ marginLeft: `${getPositionOfUnderline()}%` }} />
         </nav>
       )}
+
       <div className="nav-icon">
         <div className="icon icon-shadow text-right">
-          <a href="#/home" onClick={() => handlePageNav('home')}>
-            <i className="fas fa-chevron-up"></i>
-          </a>
+          {shouldShowMenu ? (
+            <i onClick={openMenu} className="fas fa-bars" />
+          ) : (
+            <a href="#/home" onClick={() => handlePageNav('home')}>
+              <i className="fas fa-chevron-up" />
+            </a>
+          )}
         </div>
       </div>
 
       {isShowingMenu && (
         <div className="menu">
           <div onClick={closeMenu} className="icon icon-shadow flex-end">
-            <i className="fas fa-times"></i>
+            <i className="fas fa-times" />
           </div>
           <nav>
             {pages.map(page => (
