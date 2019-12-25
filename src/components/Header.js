@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { animated, config, useTransition } from 'react-spring';
 import PropTypes from 'prop-types';
 
 import { scrollToPage } from '../utils/helpers';
@@ -8,10 +9,10 @@ import './Header.css';
 import Menu from './Menu';
 
 const Header = ({ activePage }) => {
+  const [isShowingMenu, setIsShowingMenu] = useState(false);
   const [shouldShowMenu, setShouldShowMenu] = useState(
     window.innerWidth < 1200
   );
-  const [isShowingMenu, setIsShowingMenu] = useState(false);
 
   const pages = [
     {
@@ -32,8 +33,19 @@ const Header = ({ activePage }) => {
     return () => window.removeEventListener('resize', detectScreenSize);
   }, []);
 
+  const menuTransition = useTransition(isShowingMenu, null, {
+    from: { opacity: 0 },
+    enter: {
+      opacity: 1
+    },
+    leave: {
+      opacity: 0
+    },
+    config: config.slow
+  });
+
   const handlePageNav = page => {
-    if (shouldShowMenu && isShowingMenu) {
+    if (isShowingMenu) {
       closeMenu();
     }
     scrollToPage(page);
@@ -91,7 +103,9 @@ const Header = ({ activePage }) => {
       <div className="nav-icon">
         <div className="icon icon-shadow text-right">
           {shouldShowMenu ? (
-            <i onClick={openMenu} className="fas fa-bars" />
+            <div className="clickable-padding" onClick={openMenu}>
+              <i className="fas fa-bars" />
+            </div>
           ) : (
             <a href="#/home" onClick={() => handlePageNav('home')}>
               <i className="fas fa-chevron-up" />
@@ -100,9 +114,22 @@ const Header = ({ activePage }) => {
         </div>
       </div>
 
-      {/* MENU OVERLAY */}
-      {isShowingMenu && (
+      {/* {isShowingMenu && (
         <Menu onMenuClose={closeMenu} onPageNav={handlePageNav} pages={pages} />
+      )} */}
+
+      {/* MENU OVERLAY */}
+      {menuTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <Menu
+                onMenuClose={closeMenu}
+                onPageNav={handlePageNav}
+                pages={pages}
+              />
+            </animated.div>
+          )
       )}
     </header>
   );

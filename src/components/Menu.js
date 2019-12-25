@@ -6,8 +6,10 @@ import './Menu.css';
 const Menu = ({ onMenuClose, onPageNav, pages }) => {
   return (
     <div className="menu">
-      <div onClick={onMenuClose} className="icon icon-shadow flex-end">
-        <i className="fas fa-times" />
+      <div className="icon icon-shadow flex-end">
+        <div className="clickable-padding" onClick={onMenuClose}>
+          <i className="fas fa-times" />
+        </div>
       </div>
       <nav>
         {pages.map(page => (
