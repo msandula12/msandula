@@ -67,16 +67,16 @@ const Header = ({ activePage }) => {
         </nav>
       )}
       <div className="nav-icon">
-        <div className="arrow icon-shadow rotate-90 float-right">
+        <div className="icon icon-shadow text-right">
           <a href="#/home" onClick={() => handlePageNav('home')}>
-            {'<'}
+            <i className="fas fa-chevron-up"></i>
           </a>
         </div>
       </div>
 
       {isShowingMenu && (
         <div className="menu">
-          <div onClick={closeMenu} className="menu-close icon-shadow">
+          <div onClick={closeMenu} className="icon icon-shadow flex-end">
             <i className="fas fa-times"></i>
           </div>
           <nav>

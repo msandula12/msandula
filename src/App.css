@@ -36,6 +36,14 @@ a:hover {
   flex: 1;
 }
 
+.flex-end {
+  align-self: flex-end;
+}
+
+.text-right {
+  text-align: right;
+}
+
 h1 {
   color: white;
 }
@@ -60,17 +68,8 @@ h1 {
   margin-left: 100px;
 }
 
-.arrow {
+.icon {
   font-size: 42px;
-  height: 42px;
-  width: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow a {
-  width: 50%;
 }
 
 .icon-shadow {
@@ -80,10 +79,6 @@ h1 {
 .icon-shadow:hover {
   cursor: pointer;
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
-}
-
-.rotate-90 {
-  transform: rotate(90deg);
 }
 
 .float-right {

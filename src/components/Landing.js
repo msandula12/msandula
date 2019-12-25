@@ -27,9 +27,9 @@ const Landing = () => {
           </div>
         </div>
       </FadeInSection>
-      <div className="scroll-down arrow icon-shadow rotate-90">
+      <div className="scroll-down icon icon-shadow">
         <a href="#/about" onClick={() => scrollToPage('about')}>
-          {'>'}
+          <i className="fas fa-chevron-down"></i>
         </a>
       </div>
     </div>
