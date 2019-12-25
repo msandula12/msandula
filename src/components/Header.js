@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { scrollToPage } from '../utils/helpers';
 
 import './Header.css';
 
 const Header = ({ activePage }) => {
-  const [shouldShowMenu, setShouldShowMenu] = useState(true);
-  const [isShowingMenu, setIsShowingMenu] = useState(true);
+  const [shouldShowMenu, setShouldShowMenu] = useState(
+    window.innerWidth < 1200
+  );
+  const [isShowingMenu, setIsShowingMenu] = useState(false);
 
   const pages = [
     {
@@ -18,6 +20,14 @@ const Header = ({ activePage }) => {
       page: 'resume'
     }
   ];
+
+  useEffect(() => {
+    const detectScreenSize = () => {
+      setShouldShowMenu(window.innerWidth < 1200);
+    };
+    window.addEventListener('resize', detectScreenSize);
+    return () => window.removeEventListener('resize', detectScreenSize);
+  }, []);
 
   const handlePageNav = page => {
     if (shouldShowMenu && isShowingMenu) {
@@ -74,6 +84,7 @@ const Header = ({ activePage }) => {
         </nav>
       )}
 
+      {/* NAV - ICON (OPEN OR CLOSE MENU) */}
       <div className="nav-icon">
         <div className="icon icon-shadow text-right">
           {shouldShowMenu ? (
@@ -86,6 +97,7 @@ const Header = ({ activePage }) => {
         </div>
       </div>
 
+      {/* MENU OVERLAY */}
       {isShowingMenu && (
         <div className="menu">
           <div onClick={closeMenu} className="icon icon-shadow flex-end">

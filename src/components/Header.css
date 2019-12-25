@@ -51,6 +51,10 @@ nav hr {
   margin-bottom: 16px;
 }
 
+.menu nav a:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-device-width: 1200px) {
   .nav-icon {
     flex: 1;
