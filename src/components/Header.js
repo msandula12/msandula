@@ -53,10 +53,12 @@ const Header = ({ activePage }) => {
 
   const openMenu = () => {
     setIsShowingMenu(true);
+    document.body.classList.add('no-scroll');
   };
 
   const closeMenu = () => {
     setIsShowingMenu(false);
+    document.body.classList.remove('no-scroll');
   };
 
   const getPositionOfUnderline = () => {
