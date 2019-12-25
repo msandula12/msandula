@@ -4,6 +4,8 @@ import { scrollToPage } from '../utils/helpers';
 
 import './Header.css';
 
+import Menu from './Menu';
+
 const Header = ({ activePage }) => {
   const [shouldShowMenu, setShouldShowMenu] = useState(
     window.innerWidth < 1200
@@ -99,23 +101,7 @@ const Header = ({ activePage }) => {
 
       {/* MENU OVERLAY */}
       {isShowingMenu && (
-        <div className="menu">
-          <div onClick={closeMenu} className="icon icon-shadow flex-end">
-            <i className="fas fa-times" />
-          </div>
-          <nav>
-            {pages.map(page => (
-              <a
-                href={`#/${page.page}`}
-                key={page.page}
-                onClick={() => handlePageNav(page.page)}
-                style={{ width: `100 / ${pages.length}%` }}
-              >
-                {page.label}
-              </a>
-            ))}
-          </nav>
-        </div>
+        <Menu onMenuClose={closeMenu} onPageNav={handlePageNav} pages={pages} />
       )}
     </header>
   );
