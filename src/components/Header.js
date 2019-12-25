@@ -114,10 +114,6 @@ const Header = ({ activePage }) => {
         </div>
       </div>
 
-      {/* {isShowingMenu && (
-        <Menu onMenuClose={closeMenu} onPageNav={handlePageNav} pages={pages} />
-      )} */}
-
       {/* MENU OVERLAY */}
       {menuTransition.map(
         ({ item, key, props }) =>
