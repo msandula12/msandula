@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Menu.css';
 
@@ -22,6 +23,12 @@ const Menu = ({ onMenuClose, onPageNav, pages }) => {
       </nav>
     </div>
   );
+};
+
+Menu.propTypes = {
+  onMenuClose: PropTypes.func.isRequired,
+  onPageNav: PropTypes.func.isRequired,
+  pages: PropTypes.array.isRequired
 };
 
 export default Menu;

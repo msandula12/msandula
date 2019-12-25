@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { scrollToPage } from '../utils/helpers';
 
@@ -105,6 +106,10 @@ const Header = ({ activePage }) => {
       )}
     </header>
   );
+};
+
+Header.propTypes = {
+  activePage: PropTypes.string.isRequired
 };
 
 export default Header;
