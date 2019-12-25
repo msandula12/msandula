@@ -27,3 +27,9 @@ nav hr {
   margin-top: 16px;
   width: 50%;
 }
+
+@media only screen and (min-device-width: 1200px) {
+  .nav-icon {
+    flex: 1;
+  }
+}

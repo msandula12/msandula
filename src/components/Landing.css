@@ -23,11 +23,11 @@
 }
 
 @media only screen and (min-device-width: 1200px) {
-  .split {
+  .split-logo {
     display: inline-block;
   }
 
-  .split:first-child {
+  .split-logo:first-child {
     margin-right: 24px;
   }
 }

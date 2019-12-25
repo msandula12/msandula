@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import './FadeInSection.css';
 
@@ -22,6 +23,10 @@ const FadeInSection = ({ children }) => {
       {children}
     </div>
   );
+};
+
+FadeInSection.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default FadeInSection;

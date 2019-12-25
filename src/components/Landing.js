@@ -12,12 +12,12 @@ const Landing = () => {
       <FadeInSection>
         <div className="landing-logo">
           <div>
-            <div className="split">
+            <div className="split-logo">
               <span className="code-operator">{'<'}</span>
               <span className="code-class">{'MikeSandula'}</span>
               <span className="code-operator">{' /> '}</span>
             </div>
-            <div className="split">
+            <div className="split-logo">
               <span className="code-field">{' {'}</span>
               <span className="code-singleLineComment">
                 {'/* Software Developer */'}
@@ -27,9 +27,9 @@ const Landing = () => {
           </div>
         </div>
       </FadeInSection>
-      <div className="scroll-down arrow rotate-90">
+      <div className="scroll-down icon icon-shadow">
         <a href="#/about" onClick={() => scrollToPage('about')}>
-          {'>'}
+          <i className="fas fa-chevron-down" />
         </a>
       </div>
     </div>

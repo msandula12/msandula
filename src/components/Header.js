@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { animated, config, useTransition } from 'react-spring';
+import PropTypes from 'prop-types';
 
 import { scrollToPage } from '../utils/helpers';
 
 import './Header.css';
 
+import Menu from './Menu';
+
 const Header = ({ activePage }) => {
+  const [isShowingMenu, setIsShowingMenu] = useState(false);
+  const [shouldShowMenu, setShouldShowMenu] = useState(
+    window.innerWidth < 1200
+  );
+
   const pages = [
     {
       label: 'About',
@@ -16,6 +25,42 @@ const Header = ({ activePage }) => {
     }
   ];
 
+  useEffect(() => {
+    const detectScreenSize = () => {
+      setShouldShowMenu(window.innerWidth < 1200);
+    };
+    window.addEventListener('resize', detectScreenSize);
+    return () => window.removeEventListener('resize', detectScreenSize);
+  }, []);
+
+  const menuTransition = useTransition(isShowingMenu, null, {
+    from: { opacity: 0 },
+    enter: {
+      opacity: 1
+    },
+    leave: {
+      opacity: 0
+    },
+    config: config.slow
+  });
+
+  const handlePageNav = page => {
+    if (isShowingMenu) {
+      closeMenu();
+    }
+    scrollToPage(page);
+  };
+
+  const openMenu = () => {
+    setIsShowingMenu(true);
+    document.body.classList.add('no-scroll');
+  };
+
+  const closeMenu = () => {
+    setIsShowingMenu(false);
+    document.body.classList.remove('no-scroll');
+  };
+
   const getPositionOfUnderline = () => {
     const index = activePage
       ? pages.map(page => page.page).indexOf(activePage)
@@ -26,6 +71,7 @@ const Header = ({ activePage }) => {
   return (
     <header>
       <div className="flex-1">
+        {/* LOGO */}
         <div>
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
@@ -37,28 +83,58 @@ const Header = ({ activePage }) => {
           <span className="code-field">{'}'}</span>
         </div>
       </div>
-      <nav>
-        {pages.map(page => (
-          <a
-            href={`#/${page.page}`}
-            key={page.page}
-            onClick={() => scrollToPage(page.page)}
-            style={{ width: `100 / ${pages.length}%` }}
-          >
-            {page.label}
-          </a>
-        ))}
-        <hr style={{ marginLeft: `${getPositionOfUnderline()}%` }} />
-      </nav>
-      <div className="flex-1 scroll-up">
-        <div className="arrow rotate-90 float-right">
-          <a href="#/home" onClick={() => scrollToPage('home')}>
-            {'<'}
-          </a>
+
+      {/* NAV - HEADER */}
+      {!shouldShowMenu && (
+        <nav>
+          {pages.map(page => (
+            <a
+              href={`#/${page.page}`}
+              key={page.page}
+              onClick={() => handlePageNav(page.page)}
+              style={{ width: `100 / ${pages.length}%` }}
+            >
+              {page.label}
+            </a>
+          ))}
+          <hr style={{ marginLeft: `${getPositionOfUnderline()}%` }} />
+        </nav>
+      )}
+
+      {/* NAV - ICON (OPEN OR CLOSE MENU) */}
+      <div className="nav-icon">
+        <div className="icon icon-shadow text-right">
+          {shouldShowMenu ? (
+            <div className="clickable-padding" onClick={openMenu}>
+              <i className="fas fa-bars" />
+            </div>
+          ) : (
+            <a href="#/home" onClick={() => handlePageNav('home')}>
+              <i className="fas fa-chevron-up" />
+            </a>
+          )}
         </div>
       </div>
+
+      {/* MENU OVERLAY */}
+      {menuTransition.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              <Menu
+                onMenuClose={closeMenu}
+                onPageNav={handlePageNav}
+                pages={pages}
+              />
+            </animated.div>
+          )
+      )}
     </header>
   );
+};
+
+Header.propTypes = {
+  activePage: PropTypes.string.isRequired
 };
 
 export default Header;
