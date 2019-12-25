@@ -12,12 +12,12 @@ const Landing = () => {
       <FadeInSection>
         <div className="landing-logo">
           <div>
-            <div className="split">
+            <div className="split-logo">
               <span className="code-operator">{'<'}</span>
               <span className="code-class">{'MikeSandula'}</span>
               <span className="code-operator">{' /> '}</span>
             </div>
-            <div className="split">
+            <div className="split-logo">
               <span className="code-field">{' {'}</span>
               <span className="code-singleLineComment">
                 {'/* Software Developer */'}
