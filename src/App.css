@@ -73,11 +73,11 @@ h1 {
   width: 50%;
 }
 
-.arrow a {
+.icon-shadow {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
-.arrow a:hover {
+.icon-shadow:hover {
   cursor: pointer;
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
 }

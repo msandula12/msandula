@@ -67,7 +67,7 @@ const Header = ({ activePage }) => {
         </nav>
       )}
       <div className="nav-icon">
-        <div className="arrow rotate-90 float-right">
+        <div className="arrow icon-shadow rotate-90 float-right">
           <a href="#/home" onClick={() => handlePageNav('home')}>
             {'<'}
           </a>
@@ -76,8 +76,8 @@ const Header = ({ activePage }) => {
 
       {isShowingMenu && (
         <div className="menu">
-          <div onClick={closeMenu} className="menu-close">
-            X
+          <div onClick={closeMenu} className="menu-close icon-shadow">
+            <i className="fas fa-times"></i>
           </div>
           <nav>
             {pages.map(page => (
