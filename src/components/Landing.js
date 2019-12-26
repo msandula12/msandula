@@ -23,7 +23,13 @@ const Landing = () => {
     >
       <FadeInSection>
         <div className="landing-logo">
-          <Typing cursorClassName="cursor" onFinishedTyping={finishTyping}>
+          <Typing
+            cursorClassName="cursor"
+            onFinishedTyping={finishTyping}
+            startDelay={1500}
+          >
+            {' '}
+            <Typing.Delay ms={1000} />
             <div className="split-logo">
               <span className="code-operator">{'<'}</span>
               <span className="code-class">{'MikeSandula'}</span>
@@ -36,6 +42,7 @@ const Landing = () => {
               </span>
               <span className="code-field">{'}'}</span>
             </div>
+            <Typing.Delay ms={1000} />
           </Typing>
         </div>
       </FadeInSection>

@@ -10,6 +10,10 @@
   font-size: calc(36px + 2vmin);
 }
 
+.cursor {
+  color: white;
+}
+
 .scroll-down {
   position: absolute;
   color: white;
@@ -21,11 +25,6 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: normal;
-}
-
-.cursor {
-  /* background: white; */
-  color: white;
 }
 
 @media only screen and (min-device-width: 1200px) {
