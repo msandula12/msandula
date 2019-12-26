@@ -21,15 +21,11 @@ const Landing = () => {
       className="page landing"
       style={{ background: isDoneTyping ? '#2a2a2a' : '#000' }}
     >
-      <FadeInSection>
+      <FadeInSection disabled={!isDoneTyping}>
         <div className="landing-logo">
-          <Typing
-            cursorClassName="cursor"
-            onFinishedTyping={finishTyping}
-            startDelay={1500}
-          >
+          <Typing cursorClassName="cursor" onFinishedTyping={finishTyping}>
             {' '}
-            <Typing.Delay ms={1500} />
+            <Typing.Reset count={1} delay={1500} />
             <div className="split-logo">
               <span className="code-operator">{'<'}</span>
               <span className="code-class">{'MikeSandula'}</span>

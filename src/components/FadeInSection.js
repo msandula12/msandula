@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './FadeInSection.css';
 
-const FadeInSection = ({ children }) => {
+const FadeInSection = ({ children, disabled = false }) => {
   const [isVisible, setVisible] = useState(false);
 
   const domRef = useRef();
@@ -17,7 +17,9 @@ const FadeInSection = ({ children }) => {
 
   return (
     <div
-      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      className={`${disabled ? ' ' : 'fade-in-section'} ${
+        isVisible ? 'is-visible' : ''
+      }`}
       ref={domRef}
     >
       {children}
@@ -26,7 +28,8 @@ const FadeInSection = ({ children }) => {
 };
 
 FadeInSection.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  disabled: PropTypes.bool
 };
 
 export default FadeInSection;
