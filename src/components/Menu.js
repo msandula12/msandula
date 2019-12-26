@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 
 import './Menu.css';
 
-const Menu = ({ onMenuClose, onPageNav, pages }) => {
+const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
+  console.log('activePage: ', activePage);
+  const menuPages = [
+    {
+      label: 'Home',
+      page: 'home'
+    },
+    ...pages
+  ];
   return (
     <div className="menu">
       <div className="icon icon-shadow flex-end">
@@ -12,13 +20,19 @@ const Menu = ({ onMenuClose, onPageNav, pages }) => {
         </div>
       </div>
       <nav>
-        {pages.map(page => (
+        {menuPages.map(page => (
           <a
             href={`#/${page.page}`}
             key={page.page}
             onClick={() => onPageNav(page.page)}
             style={{ width: `100 / ${pages.length}%` }}
           >
+            {(activePage === page.page ||
+              (!activePage && page.page === 'home')) && (
+              <div className="icon active-icon">
+                <i className="fas fa-chevron-right" />
+              </div>
+            )}
             {page.label}
           </a>
         ))}
@@ -28,6 +42,7 @@ const Menu = ({ onMenuClose, onPageNav, pages }) => {
 };
 
 Menu.propTypes = {
+  activePage: PropTypes.string.isRequired,
   onMenuClose: PropTypes.func.isRequired,
   onPageNav: PropTypes.func.isRequired,
   pages: PropTypes.array.isRequired
