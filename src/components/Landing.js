@@ -11,6 +11,10 @@ import FadeInSection from './FadeInSection';
 const Landing = () => {
   const [isDoneTyping, setIsDoneTyping] = useState(false);
 
+  const startTyping = () => {
+    document.body.classList.add('no-scroll');
+  };
+
   const finishTyping = () => {
     setIsDoneTyping(true);
     document.body.classList.remove('no-scroll');
@@ -23,7 +27,11 @@ const Landing = () => {
     >
       <FadeInSection disabled={!isDoneTyping}>
         <div className="landing-logo">
-          <Typing cursorClassName="cursor" onFinishedTyping={finishTyping}>
+          <Typing
+            cursorClassName="cursor"
+            onFinishedTyping={finishTyping}
+            onStartedTyping={startTyping}
+          >
             {' '}
             <Typing.Reset count={1} delay={1500} />
             <div className="split-logo">
