@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import './Menu.css';
 
 const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
-  console.log('activePage: ', activePage);
   const menuPages = [
     {
       label: 'Home',
@@ -12,6 +11,7 @@ const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
     },
     ...pages
   ];
+
   return (
     <div className="menu">
       <div className="icon icon-shadow flex-end">
