@@ -11,7 +11,11 @@
 }
 
 .cursor {
+  font-weight: 100;
   color: white;
+  font-size: 1em;
+  padding-left: 2px;
+  animation: blink 1s step-end infinite;
 }
 
 .scroll-down {
@@ -43,16 +47,23 @@
   }
 }
 
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes wiggle {
-  0% {
+  from,
+  to {
     bottom: 0;
   }
 
   50% {
     bottom: 10px;
-  }
-
-  100% {
-    bottom: 0;
   }
 }
