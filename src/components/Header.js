@@ -122,6 +122,7 @@ const Header = ({ activePage }) => {
           item && (
             <animated.div key={key} style={props}>
               <Menu
+                activePage={activePage}
                 onMenuClose={closeMenu}
                 onPageNav={handlePageNav}
                 pages={pages}

@@ -3,10 +3,15 @@
   position: relative;
   width: 100%;
   z-index: 1;
+  transition: background 0.4s ease-in;
 }
 
 .landing-logo {
   font-size: calc(36px + 2vmin);
+}
+
+.cursor {
+  color: white;
 }
 
 .scroll-down {
