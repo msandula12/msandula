@@ -27,7 +27,7 @@
   animation-direction: normal;
 }
 
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-device-width: 1300px) {
   .split-logo {
     display: inline-block;
   }
