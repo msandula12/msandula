@@ -23,12 +23,20 @@ nav hr {
   height: 2px;
   background: white;
   border: none;
-  transition: 0.4s ease-in-out;
   margin-top: 16px;
   width: 50%;
+  text-align: left;
+
+  /* Slide between active pages */
+  --hrSlide: 0.4s ease-in-out;
+  transition: var(--hrSlide);
+  -o-transition: var(--hrSlide);
+  -ms-transition: var(--hrSlide);
+  -moz-transition: var(--hrSlide);
+  -webkit-transition: var(--hrSlide);
 }
 
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .nav-icon {
     flex: 1;
   }

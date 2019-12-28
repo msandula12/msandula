@@ -28,9 +28,10 @@ const Landing = () => {
       <FadeInSection disabled={!isDoneTyping}>
         <div className="landing-logo">
           <Typing
-            cursorClassName="cursor"
+            cursor={<span className="cursor">|</span>}
             onFinishedTyping={finishTyping}
             onStartedTyping={startTyping}
+            speed={75}
           >
             {' '}
             <Typing.Reset count={1} delay={1500} />
