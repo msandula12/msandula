@@ -1,4 +1,4 @@
 .about {
-  background: #4ec9b0;
+  background: var(--code-class);
   color: white;
 }
