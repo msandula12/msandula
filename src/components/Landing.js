@@ -53,7 +53,11 @@ const Landing = () => {
       </FadeInSection>
       {isDoneTyping && (
         <div className="scroll-down icon icon-shadow">
-          <a href="#/about" onClick={() => scrollToPage('about')}>
+          <a
+            href="#/about"
+            className="clickable-padding"
+            onClick={() => scrollToPage('about')}
+          >
             <i className="fas fa-chevron-down" />
           </a>
         </div>

@@ -72,7 +72,7 @@ const Header = ({ activePage }) => {
     <header>
       <div className="flex-1">
         {/* LOGO */}
-        <div>
+        <div className="header-logo">
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
           <span className="code-operator">{' /> '}</span>
@@ -109,7 +109,11 @@ const Header = ({ activePage }) => {
               <i className="fas fa-bars" />
             </div>
           ) : (
-            <a href="#/home" onClick={() => handlePageNav('home')}>
+            <a
+              href="#/home"
+              className="clickable-padding"
+              onClick={() => handlePageNav('home')}
+            >
               <i className="fas fa-chevron-up" />
             </a>
           )}
