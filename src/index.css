@@ -62,4 +62,9 @@ code {
   --code-typeArgument: #bfa4a4;
   --code-typeParameter: #bfa4a4;
   --code-writeOccurrenceIndication: #000000;
+
+  /* Social media colors */
+  --codepen: #0ebeff;
+  --github: #211f1f;
+  --linkedin: #007bb5;
 }
