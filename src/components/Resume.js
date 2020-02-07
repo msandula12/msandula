@@ -89,13 +89,9 @@ const Resume = () => {
             <span className="code-method">{'['}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">{'"React.js",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Angular 2+",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Vue.js",'}</span>
+            <span className="code-string">
+              {'"Angular 2+/React.js/Vue.js",'}
+            </span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"jQuery",'}</span>
@@ -107,6 +103,9 @@ const Resume = () => {
           </div>
           <div className="indented-3">
             <span className="code-string">{'"RxJS",'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-string">{'"Python",'}</span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"FlatBuffers",'}</span>
