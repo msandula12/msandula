@@ -17,7 +17,7 @@ const About = () => {
       }
       const rect = aboutPage.current.getBoundingClientRect();
       const { top } = rect;
-      setShowSocialIcons(top > 0 && top < 400);
+      setShowSocialIcons(top >= 0 && top < 400);
     };
     window.addEventListener('scroll', determineIfShouldShowSocialIcons);
     return () =>
@@ -28,7 +28,7 @@ const About = () => {
     from: { bottom: 40, right: 0, opacity: 0, position: 'fixed' },
     enter: { bottom: 40, right: 32, opacity: 1 },
     leave: { bottom: 40, right: 0, opacity: 0 },
-    config: config.gentle
+    config: config.gentle,
   });
 
   return (
