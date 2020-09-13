@@ -17,12 +17,12 @@ const Header = ({ activePage }) => {
   const pages = [
     {
       label: 'About',
-      page: 'about'
+      page: 'about',
     },
     {
       label: 'Resume',
-      page: 'resume'
-    }
+      page: 'resume',
+    },
   ];
 
   useEffect(() => {
@@ -36,15 +36,15 @@ const Header = ({ activePage }) => {
   const menuTransition = useTransition(isShowingMenu, null, {
     from: { opacity: 0 },
     enter: {
-      opacity: 1
+      opacity: 1,
     },
     leave: {
-      opacity: 0
+      opacity: 0,
     },
-    config: config.slow
+    config: config.slow,
   });
 
-  const handlePageNav = page => {
+  const handlePageNav = (page) => {
     if (isShowingMenu) {
       closeMenu();
     }
@@ -63,7 +63,7 @@ const Header = ({ activePage }) => {
 
   const getPositionOfUnderline = () => {
     const index = activePage
-      ? pages.map(page => page.page).indexOf(activePage)
+      ? pages.map((page) => page.page).indexOf(activePage)
       : 0;
     return (100 / pages.length) * index;
   };
@@ -76,18 +76,22 @@ const Header = ({ activePage }) => {
           <span className="code-operator">{'<'}</span>
           <span className="code-class">{'MikeSandula'}</span>
           <span className="code-operator">{' /> '}</span>
-          <span className="code-field">{'{'}</span>
-          <span className="code-singleLineComment">
-            {'/* Software Developer */'}
-          </span>
-          <span className="code-field">{'}'}</span>
+          {!shouldShowMenu && (
+            <>
+              <span className="code-field">{'{'}</span>
+              <span className="code-singleLineComment">
+                {'/* Software Developer */'}
+              </span>
+              <span className="code-field">{'}'}</span>
+            </>
+          )}
         </div>
       </div>
 
       {/* NAV - HEADER */}
       {!shouldShowMenu && (
         <nav>
-          {pages.map(page => (
+          {pages.map((page) => (
             <a
               href={`#/${page.page}`}
               key={page.page}
@@ -139,7 +143,7 @@ const Header = ({ activePage }) => {
 };
 
 Header.propTypes = {
-  activePage: PropTypes.string.isRequired
+  activePage: PropTypes.string.isRequired,
 };
 
 export default Header;
