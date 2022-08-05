@@ -267,13 +267,80 @@ const Resume = () => {
             <span className="code-string">{'"Experience"'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
-          {/* GLCS */}
+          {/* Dictionary.com */}
           <div className="indented-2">
             <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Job'}</span>
           </div>
           <div className="indented-3">
             <span className="code-field">{'isCurrent'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'company'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Dictionary.com"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'location'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Oakland, Calif."'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'role'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Senior Software Developer"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'startDate'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"August 2021"'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {
+                'Work closely with product, design and machine learning team to deliver frontend features for Dictionary.com’s Grammar Coach writing tool'
+              }
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {
+                'Assisted with conversion to TypeScript and introduced Redux Toolkit to simplify application state'
+              }
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Job'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          {/* GLCS */}
+          <div className="indented-2">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Job'}</span>
           </div>
           <div className="indented-3">
             <span className="code-field">{'company'}</span>
@@ -290,12 +357,17 @@ const Resume = () => {
           <div className="indented-3">
             <span className="code-field">{'role'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Front-End Developer"'}</span>
+            <span className="code-string">{'"Software Developer"'}</span>
           </div>
           <div className="indented-3">
             <span className="code-field">{'startDate'}</span>
             <span className="code-operator">{'='}</span>
             <span className="code-string">{'"January 2019"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'endDate'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"July 2021"'}</span>
           </div>
           <div className="indented-2">
             <span className="code-operator">{'>'}</span>
@@ -308,40 +380,20 @@ const Resume = () => {
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Build and maintain a React with Redux front-end of an end-to-end budget forecasting application for Trinity Health'
+                'Built and maintained a React with Redux front-end of an end-to-end budget forecasting application for Trinity Health'
               }
             </span>
           </div>
           <div className="indented-3">
             <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Description'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Use Flatbuffers to serialize and deserialize large amounts of budgeting data'
+                'Displayed data using flexible, interactive data grids and charts'
               }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'Display data using flexible, interactive data grids and charts'}
             </span>
           </div>
           <div className="indented-3">
@@ -481,63 +533,6 @@ const Resume = () => {
             <span className="code-annotation">
               {
                 'Designed and developed UI wireframes and mockups using Adobe XD'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Job'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* The Oakland Press */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Job'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'company'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">
-              {'"The Oakland Press (Digital First Media)"'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Pontiac, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'role'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Pagination Hub Editor"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'startDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"August 2011"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'endDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"January 2016"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Designed, proofed and finalized the print products for eight daily broadsheets, plus a handful of weekly Michigan and New York newspapers'
               }
             </span>
           </div>
