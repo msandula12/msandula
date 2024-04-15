@@ -49,11 +49,13 @@ const About = () => {
             landing his first developer job shortly after.
           </p>
           <p>
-            Mike specializes in building front-ends for large web applications.
+            Mike specializes in building frontends for large web applications
+            using best practices with an eye towards code readability and
+            maintainability.
           </p>
           <p>
             When he's not behind a computer, Mike can be found behind either his
-            drum set or a book, or beside his wife and their cat, Ziggy.
+            drum set or a book, or beside his wife and their daughter and cat.
           </p>
         </div>
       </FadeInSection>

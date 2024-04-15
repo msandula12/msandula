@@ -43,7 +43,7 @@ const Landing = () => {
             <div className="split-logo">
               <span className="code-field">{' {'}</span>
               <span className="code-singleLineComment">
-                {'/* Software Developer */'}
+                {'/* Software Engineer */'}
               </span>
               <span className="code-field">{'}'}</span>
             </div>

@@ -80,7 +80,7 @@ const Header = ({ activePage }) => {
             <>
               <span className="code-field">{'{'}</span>
               <span className="code-singleLineComment">
-                {'/* Software Developer */'}
+                {'/* Software Engineer */'}
               </span>
               <span className="code-field">{'}'}</span>
             </>

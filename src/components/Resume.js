@@ -49,7 +49,7 @@ const Resume = () => {
             <span className="code-class">{'MikeSandula '}</span>
             <span className="code-field">{'title'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Software Developer"'}</span>
+            <span className="code-string">{'"Software Engineer"'}</span>
             <span className="code-operator">{' />'}</span>
           </div>
           <div className="indented-1">
@@ -90,22 +90,20 @@ const Resume = () => {
           </div>
           <div className="indented-3">
             <span className="code-string">
-              {'"Angular 2+/React.js/Vue.js",'}
+              {'"React.js/Angular 2+/Vue.js",'}
             </span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"Next.js",'}</span>
           </div>
           <div className="indented-3">
+            <span className="code-string">{'"JavaScript/TypeScript",'}</span>
+          </div>
+          <div className="indented-3">
             <span className="code-string">{'"jQuery",'}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">
-              {'"JavaScript/ES6/TypeScript",'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"RxJS",'}</span>
+            <span className="code-string">{'"WebSockets/RxJS",'}</span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"Python",'}</span>
@@ -126,13 +124,13 @@ const Resume = () => {
             <span className="code-string">{'"HTML5",'}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">{'"CSS/LESS/Sass/CSS-in-JS",'}</span>
+            <span className="code-string">{'"CSS3/LESS/Sass/CSS-in-JS",'}</span>
           </div>
           <div className="indented-3">
             <span className="code-string">{'"D3.js",'}</span>
           </div>
           <div className="indented-3">
-            <span className="code-string">{'"Adobe XD"'}</span>
+            <span className="code-string">{'"Adobe XD/Figma"'}</span>
           </div>
           <div className="indented-2">
             <span className="code-method">{']'}</span>
@@ -283,17 +281,17 @@ const Resume = () => {
           <div className="indented-3">
             <span className="code-field">{'location'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Oakland, Calif."'}</span>
+            <span className="code-string">{'"Oakland, Calif. (remote)"'}</span>
           </div>
           <div className="indented-3">
             <span className="code-field">{'role'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Senior Software Developer"'}</span>
+            <span className="code-string">{'"Staff Software Engineer"'}</span>
           </div>
           <div className="indented-3">
             <span className="code-field">{'startDate'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"August 2021"'}</span>
+            <span className="code-string">{'"April 2023"'}</span>
           </div>
           <div className="indented-2">
             <span className="code-operator">{'>'}</span>
@@ -306,7 +304,7 @@ const Resume = () => {
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Work closely with product, design and machine learning team to deliver frontend features for Dictionary.com’s Grammar Coach writing tool'
+                'Rebuilt and redesigned Dictionary and Thesaurus’ isomorphic websites'
               }
             </span>
           </div>
@@ -322,8 +320,78 @@ const Resume = () => {
           </div>
           <div className="indented-4">
             <span className="code-annotation">
+              {'Developed in-house Design System'}
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
               {
-                'Assisted with conversion to TypeScript and introduced Redux Toolkit to simplify application state'
+                'Established design patterns and best coding practices for frontend team'
+              }
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Job'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+
+          <div className="indented-2">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Job'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'company'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Dictionary.com"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'location'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Oakland, Calif. (remote)"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'role'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Senior Software Engineer"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'startDate'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"August 2021"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'endDate'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"April 2023"'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {
+                'Collaborated with product, design, and machine learning teams to deliver frontend features for Grammar Coach writing tool'
               }
             </span>
           </div>
@@ -380,19 +448,7 @@ const Resume = () => {
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Built and maintained a React with Redux front-end of an end-to-end budget forecasting application for Trinity Health'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Displayed data using flexible, interactive data grids and charts'
+                'Built and maintained a React with Redux frontend of an end-to-end budget forecasting application for Trinity Health'
               }
             </span>
           </div>
@@ -447,7 +503,7 @@ const Resume = () => {
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Built client-facing websites and web apps using the latest front-end frameworks'
+                'Built client-facing websites and web apps using the latest frontend frameworks'
               }
             </span>
           </div>
@@ -463,9 +519,7 @@ const Resume = () => {
           </div>
           <div className="indented-4">
             <span className="code-annotation">
-              {
-                'Lead developer for the front-end of Logicdrop’s Studio Platform'
-              }
+              {'Lead developer for the frontend of Logicdrop’s Studio Platform'}
             </span>
           </div>
           <div className="indented-3">
@@ -481,7 +535,7 @@ const Resume = () => {
           <div className="indented-4">
             <span className="code-annotation">
               {
-                'Worked side-by-side with back-end team to implement Rest APIs with RxJS observables'
+                'Worked side-by-side with backend team to implement Rest APIs with RxJS observables'
               }
             </span>
           </div>
@@ -499,40 +553,6 @@ const Resume = () => {
             <span className="code-annotation">
               {
                 'Wrote code for importing and exporting Excel spreadsheets and .CSV files and displaying them in an editable data table'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Followed GitLab best practices for version control and continuous integration'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Designed and developed UI wireframes and mockups using Adobe XD'
               }
             </span>
           </div>
