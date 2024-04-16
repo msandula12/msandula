@@ -100,148 +100,6 @@ const Resume = () => {
             <span className="code-operator">{' />'}</span>
           </div>
 
-          {/* SKILLS */}
-          <div className="indented-1">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Skills '}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-field">{'skills'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-field">{'{'}</span>
-            <span className="code-method">{'['}</span>
-          </div>
-          {SKILLS.map((skill, index) => (
-            <div className="indented-3" key={skill}>
-              <span className="code-string">{`"${skill}"${
-                index < SKILLS.length - 1 ? ',' : ''
-              }`}</span>
-            </div>
-          ))}
-          <div className="indented-2">
-            <span className="code-method">{']'}</span>
-            <span className="code-field">{'}'}</span>
-          </div>
-          <div className="indented-1">
-            <span className="code-operator">{'/>'}</span>
-          </div>
-
-          {/* SECTION - EDUCATION */}
-          <div className="indented-1">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Section '}</span>
-            <span className="code-field">{'title'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Education"'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* GRAND CIRCUS */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Education'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'place'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Grand Circus"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Detroit, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'graduated'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"March 2016"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'JavaScript Developer Bootcamp'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Education'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* OU */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Education'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'place'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Oakland University"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Rochester, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'graduated'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"December 2010"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'Bachelor of Arts in Journalism, GPA 3.6'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'Cum Laude with departmental honors'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Education'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-1">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Section'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-
           {/* SECTION - EXPERIENCE */}
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
@@ -662,6 +520,148 @@ const Resume = () => {
             <span className="code-operator">{'</'}</span>
             <span className="code-class">{'Section'}</span>
             <span className="code-operator">{'>'}</span>
+          </div>
+
+          {/* SECTION - EDUCATION */}
+          <div className="indented-1">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Section '}</span>
+            <span className="code-field">{'title'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Education"'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          {/* GRAND CIRCUS */}
+          <div className="indented-2">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Education'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'place'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Grand Circus"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'location'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Detroit, Mich."'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'graduated'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"March 2016"'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {'JavaScript Developer Bootcamp'}
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Education'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          {/* OU */}
+          <div className="indented-2">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Education'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'place'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Oakland University"'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'location'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Rochester, Mich."'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-field">{'graduated'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"December 2010"'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {'Bachelor of Arts in Journalism, GPA 3.6'}
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-4">
+            <span className="code-annotation">
+              {'Cum Laude with departmental honors'}
+            </span>
+          </div>
+          <div className="indented-3">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Description'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Education'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          <div className="indented-1">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Section'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+
+          {/* SKILLS */}
+          <div className="indented-1">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Skills '}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-field">{'skills'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-field">{'{'}</span>
+            <span className="code-method">{'['}</span>
+          </div>
+          {SKILLS.map((skill, index) => (
+            <div className="indented-3" key={skill}>
+              <span className="code-string">{`"${skill}"${
+                index < SKILLS.length - 1 ? ',' : ''
+              }`}</span>
+            </div>
+          ))}
+          <div className="indented-2">
+            <span className="code-method">{']'}</span>
+            <span className="code-field">{'}'}</span>
+          </div>
+          <div className="indented-1">
+            <span className="code-operator">{'/>'}</span>
           </div>
 
           {/* END */}
