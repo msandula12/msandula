@@ -6,6 +6,25 @@ import './Resume.css';
 import DownloadPDFButton from './DownloadPDFButton';
 import FadeInSection from './FadeInSection';
 
+const EDUCATION = [
+  {
+    descriptions: ['JavaScript Developer Bootcamp'],
+    graduated: 'March 2016',
+    location: 'Detrot, Mich.',
+    place: 'Grand Circus',
+  },
+  {
+    descriptions: [
+      'Bachelor of Arts in Journalism',
+      'GPA 3.6',
+      'Cum Laude with departmental honors',
+    ],
+    graduated: 'December 2010',
+    location: 'Rochester, Mich.',
+    place: 'Oakland University',
+  },
+];
+
 const SKILLS = [
   'Angular',
   'CSS3/LESS/SCSS',
@@ -522,7 +541,7 @@ const Resume = () => {
             <span className="code-operator">{'>'}</span>
           </div>
 
-          {/* SECTION - EDUCATION */}
+          {/* EDUCATION */}
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Section '}</span>
@@ -531,107 +550,54 @@ const Resume = () => {
             <span className="code-string">{'"Education"'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
-          {/* GRAND CIRCUS */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Education'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'place'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Grand Circus"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Detroit, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'graduated'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"March 2016"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'JavaScript Developer Bootcamp'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Education'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* OU */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Education'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'place'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Oakland University"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Rochester, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'graduated'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"December 2010"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'Bachelor of Arts in Journalism, GPA 3.6'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {'Cum Laude with departmental honors'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Education'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
+          {EDUCATION.map((education) => (
+            <React.Fragment key={education.place}>
+              <div className="indented-2">
+                <span className="code-operator">{'<'}</span>
+                <span className="code-class">{'Education'}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'place'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${education.place}"`}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'location'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${education.location}"`}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'graduated'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${education.graduated}"`}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-operator">{'>'}</span>
+              </div>
+              {education.descriptions.map((description) => (
+                <React.Fragment key={description}>
+                  <div className="indented-3">
+                    <span className="code-operator">{'<'}</span>
+                    <span className="code-class">{'Description'}</span>
+                    <span className="code-operator">{'>'}</span>
+                  </div>
+                  <div className="indented-4">
+                    <span className="code-annotation">{description}</span>
+                  </div>
+                  <div className="indented-3">
+                    <span className="code-operator">{'</'}</span>
+                    <span className="code-class">{'Description'}</span>
+                    <span className="code-operator">{'>'}</span>
+                  </div>
+                </React.Fragment>
+              ))}
+              <div className="indented-2">
+                <span className="code-operator">{'</'}</span>
+                <span className="code-class">{'Education'}</span>
+                <span className="code-operator">{'>'}</span>
+              </div>
+            </React.Fragment>
+          ))}
           <div className="indented-1">
             <span className="code-operator">{'</'}</span>
             <span className="code-class">{'Section'}</span>
