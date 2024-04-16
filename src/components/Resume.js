@@ -6,6 +6,29 @@ import './Resume.css';
 import DownloadPDFButton from './DownloadPDFButton';
 import FadeInSection from './FadeInSection';
 
+const SKILLS = [
+  'Angular',
+  'CSS3/LESS/SCSS',
+  'Cypress/Jest',
+  'ESLint',
+  'Figma',
+  'Git/GitHub/GitLab',
+  'GraphQL',
+  'HTML5',
+  'Javascript/ES6',
+  'Next.js',
+  'Node.js',
+  'NPM/Yarn',
+  'Prettier',
+  'Python	 (Dash/Flask)',
+  'React.js',
+  'Redux/Redux Toolkit',
+  'TypeScript',
+  'Vue.js',
+  'Webpack',
+  'WebSockets',
+];
+
 const Resume = () => {
   const [showPDFButton, setShowPDFButton] = useState(false);
   const resumePage = createRef();
@@ -88,50 +111,13 @@ const Resume = () => {
             <span className="code-field">{'{'}</span>
             <span className="code-method">{'['}</span>
           </div>
-          <div className="indented-3">
-            <span className="code-string">
-              {'"React.js/Angular 2+/Vue.js",'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Next.js",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"JavaScript/TypeScript",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"jQuery",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"WebSockets/RxJS",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Python",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"FlatBuffers",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Redux/MobX",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"NPM/Yarn/Node.js",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Git/GitHub/GitLab",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"HTML5",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"CSS3/LESS/Sass/CSS-in-JS",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"D3.js",'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-string">{'"Adobe XD/Figma"'}</span>
-          </div>
+          {SKILLS.map((skill, index) => (
+            <div className="indented-3" key={skill}>
+              <span className="code-string">{`"${skill}"${
+                index < SKILLS.length - 1 ? ',' : ''
+              }`}</span>
+            </div>
+          ))}
           <div className="indented-2">
             <span className="code-method">{']'}</span>
             <span className="code-field">{'}'}</span>
