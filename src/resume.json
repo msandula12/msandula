@@ -1,0 +1,48 @@
+{
+  "certifications": [],
+  "education": [
+    {
+      "descriptions": ["JavaScript Developer Bootcamp"],
+      "graduated": "March 2016",
+      "location": "Detrot, Mich.",
+      "place": "Grand Circus"
+    },
+    {
+      "descriptions": [
+        "Bachelor of Arts in Journalism",
+        "GPA 3.6",
+        "Cum Laude with departmental honors"
+      ],
+      "graduated": "December 2010",
+      "location": "Rochester, Mich.",
+      "place": "Oakland University"
+    }
+  ],
+  "email": "msandula@gmail.com",
+  "github": "msandula12",
+  "jobs": [],
+  "linkedin": "MikeSandula",
+  "skills": [
+    "Angular",
+    "CSS3/LESS/SCSS",
+    "Cypress/Jest",
+    "ESLint",
+    "Figma",
+    "Git/GitHub/GitLab",
+    "GraphQL",
+    "HTML5",
+    "Javascript/ES6",
+    "Next.js",
+    "Node.js",
+    "NPM/Yarn",
+    "Prettier",
+    "Python (Dash/Flask)",
+    "React.js",
+    "Redux/Redux Toolkit",
+    "TypeScript",
+    "Vue.js",
+    "Webpack",
+    "WebSockets"
+  ],
+  "title": "Software Engineer"
+}

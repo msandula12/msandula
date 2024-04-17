@@ -1,52 +1,12 @@
 import React, { createRef, useEffect, useState } from 'react';
 import { animated, config, useTransition } from 'react-spring';
 
+import resume from '../resume.json';
+
 import './Resume.css';
 
 import DownloadPDFButton from './DownloadPDFButton';
 import FadeInSection from './FadeInSection';
-
-const EDUCATION = [
-  {
-    descriptions: ['JavaScript Developer Bootcamp'],
-    graduated: 'March 2016',
-    location: 'Detrot, Mich.',
-    place: 'Grand Circus',
-  },
-  {
-    descriptions: [
-      'Bachelor of Arts in Journalism',
-      'GPA 3.6',
-      'Cum Laude with departmental honors',
-    ],
-    graduated: 'December 2010',
-    location: 'Rochester, Mich.',
-    place: 'Oakland University',
-  },
-];
-
-const SKILLS = [
-  'Angular',
-  'CSS3/LESS/SCSS',
-  'Cypress/Jest',
-  'ESLint',
-  'Figma',
-  'Git/GitHub/GitLab',
-  'GraphQL',
-  'HTML5',
-  'Javascript/ES6',
-  'Next.js',
-  'Node.js',
-  'NPM/Yarn',
-  'Prettier',
-  'Python	 (Dash/Flask)',
-  'React.js',
-  'Redux/Redux Toolkit',
-  'TypeScript',
-  'Vue.js',
-  'Webpack',
-  'WebSockets',
-];
 
 const Resume = () => {
   const [showPDFButton, setShowPDFButton] = useState(false);
@@ -91,7 +51,7 @@ const Resume = () => {
             <span className="code-class">{'MikeSandula '}</span>
             <span className="code-field">{'title'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Software Engineer"'}</span>
+            <span className="code-string">{`"${resume.title}"`}</span>
             <span className="code-operator">{' />'}</span>
           </div>
           <div className="indented-1">
@@ -99,7 +59,7 @@ const Resume = () => {
             <span className="code-class">{'Contact '}</span>
             <span className="code-field">{'email'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"msandula@gmail.com"'}</span>
+            <span className="code-string">{`"${resume.email}"`}</span>
             <span className="code-operator">{' />'}</span>
           </div>
           <div className="indented-1">
@@ -107,7 +67,7 @@ const Resume = () => {
             <span className="code-class">{'GitHub '}</span>
             <span className="code-field">{'userName'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"msandula12"'}</span>
+            <span className="code-string">{`"${resume.github}"`}</span>
             <span className="code-operator">{' />'}</span>
           </div>
           <div className="indented-1">
@@ -115,7 +75,7 @@ const Resume = () => {
             <span className="code-class">{'LinkedIn '}</span>
             <span className="code-field">{'userName'}</span>
             <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"MikeSandula"'}</span>
+            <span className="code-string">{`"${resume.linkedin}"`}</span>
             <span className="code-operator">{' />'}</span>
           </div>
 
@@ -550,7 +510,7 @@ const Resume = () => {
             <span className="code-string">{'"Education"'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
-          {EDUCATION.map((education) => (
+          {resume.education.map((education) => (
             <React.Fragment key={education.place}>
               <div className="indented-2">
                 <span className="code-operator">{'<'}</span>
@@ -615,10 +575,10 @@ const Resume = () => {
             <span className="code-field">{'{'}</span>
             <span className="code-method">{'['}</span>
           </div>
-          {SKILLS.map((skill, index) => (
+          {resume.skills.map((skill, index) => (
             <div className="indented-3" key={skill}>
               <span className="code-string">{`"${skill}"${
-                index < SKILLS.length - 1 ? ',' : ''
+                index < resume.skills.length - 1 ? ',' : ''
               }`}</span>
             </div>
           ))}
