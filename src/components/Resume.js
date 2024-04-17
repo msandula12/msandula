@@ -238,6 +238,62 @@ const Resume = () => {
             <span className="code-operator">{'>'}</span>
           </div>
 
+          {/* CERTIFICATIONS */}
+          <div className="indented-1">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Section '}</span>
+            <span className="code-field">{'type'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{'"Certifications"'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+          {resume.certifications.map((certification) => (
+            <React.Fragment key={certification.title}>
+              <div className="indented-2">
+                <span className="code-operator">{'<'}</span>
+                <span className="code-class">{'Certification'}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'from'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${certification.from}"`}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'obtained'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${certification.obtained}"`}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-operator">{'>'}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-operator">{'<'}</span>
+                <span className="code-class">{'Description'}</span>
+                <span className="code-operator">{'>'}</span>
+              </div>
+              <div className="indented-4">
+                <span className="code-annotation">
+                  {certification.description}
+                </span>
+              </div>
+              <div className="indented-3">
+                <span className="code-operator">{'</'}</span>
+                <span className="code-class">{'Description'}</span>
+                <span className="code-operator">{'>'}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-operator">{'</'}</span>
+                <span className="code-class">{'Certification'}</span>
+                <span className="code-operator">{'>'}</span>
+              </div>
+            </React.Fragment>
+          ))}
+          <div className="indented-1">
+            <span className="code-operator">{'</'}</span>
+            <span className="code-class">{'Section'}</span>
+            <span className="code-operator">{'>'}</span>
+          </div>
+
           {/* SKILLS */}
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>

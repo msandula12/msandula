@@ -84,7 +84,13 @@
       "place": "Oakland University"
     }
   ],
-  "certifications": [],
+  "certifications": [
+    {
+      "from": "Amazon Web Services",
+      "obtained": "February 2024",
+      "description": "AWS Certified Cloud Practitioner (CLF-C02)"
+    }
+  ],
   "skills": [
     "Angular",
     "CSS3/LESS/SCSS",
