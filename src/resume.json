@@ -1,5 +1,71 @@
 {
-  "certifications": [],
+  "title": "Software Engineer",
+  "email": "msandula@gmail.com",
+  "github": "msandula12",
+  "linkedin": "MikeSandula",
+  "jobs": [
+    {
+      "company": "Dictionary.com",
+      "location": "Oakland, Calif. (remote)",
+      "roles": [
+        {
+          "descriptions": [
+            "Helped rebuild and redesign Dictionary.com and Thesaurus.com websites, going from multiple applications comprised of various tech stacks to a single, isomorphic React application with a brand new, user-tested UI",
+            "Wrote integration for Storyblok’s Headless CMS to populate homepage data modules",
+            "Developed in-house design system in tandem with design team using Figma and Style Dictionary",
+            "Established design patterns and best coding practices for frontend team",
+            "Co-led software architecture rounds for interviewing new engineering candidates"
+          ],
+          "endDate": null,
+          "startDate": "April 2023",
+          "title": "Staff Software Engineer"
+        },
+        {
+          "descriptions": [
+            "Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool written in Next.js",
+            "Implemented WebSockets to enhance the UX performance and feel of Grammar Coach editor",
+            "Migrated Grammar Coach codebase to TypeScript and introduced Redux Toolkit"
+          ],
+          "endDate": "April 2023",
+          "startDate": "August 2021",
+          "title": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "company": "Great Lakes Consulting Services, Inc.",
+      "location": "Livonia, Mich.",
+      "roles": [
+        {
+          "descriptions": [
+            "Developed and managed a React with Redux (TypeScript) frontend of an end-to-end budget forecasting application for Trinity Health’s budget team",
+            "Designed an internal dashboard application utilizing Dash/Flask (Python)",
+            "Facilitated the onboarding and training of junior engineers and interns"
+          ],
+          "endDate": "July 2021",
+          "startDate": "January 2019",
+          "title": "Software Developer"
+        }
+      ]
+    },
+    {
+      "company": "Logicdrop",
+      "location": "Ferndale, Mich.",
+      "roles": [
+        {
+          "descriptions": [
+            "Developed multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
+            "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor",
+            "Collaborated with backend team to integrate Rest APIs using RxJS observables",
+            "Implemented functionality for importing Excel spreadsheets and .CSV files into editable data tables"
+          ],
+          "endDate": "December 2018",
+          "startDate": "April 2016",
+          "title": "Software Developer"
+        }
+      ]
+    }
+  ],
   "education": [
     {
       "descriptions": ["JavaScript Developer Bootcamp"],
@@ -18,10 +84,7 @@
       "place": "Oakland University"
     }
   ],
-  "email": "msandula@gmail.com",
-  "github": "msandula12",
-  "jobs": [],
-  "linkedin": "MikeSandula",
+  "certifications": [],
   "skills": [
     "Angular",
     "CSS3/LESS/SCSS",
@@ -43,6 +106,5 @@
     "Vue.js",
     "Webpack",
     "WebSockets"
-  ],
-  "title": "Software Engineer"
+  ]
 }

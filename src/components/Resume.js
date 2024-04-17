@@ -79,422 +79,96 @@ const Resume = () => {
             <span className="code-operator">{' />'}</span>
           </div>
 
-          {/* SECTION - EXPERIENCE */}
+          {/* EXPERIENCE */}
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Section '}</span>
-            <span className="code-field">{'title'}</span>
+            <span className="code-field">{'type'}</span>
             <span className="code-operator">{'='}</span>
             <span className="code-string">{'"Experience"'}</span>
             <span className="code-operator">{'>'}</span>
           </div>
-          {/* Dictionary.com */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Job'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'isCurrent'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'company'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Dictionary.com"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Oakland, Calif. (remote)"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'role'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Staff Software Engineer"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'startDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"April 2023"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Helped rebuild and redesign Dictionary.com and Thesaurus.com websites, going from multiple applications comprised of various tech stacks to a single, isomorphic React application with a brand new, user-tested UI'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Wrote integration for Storyblok’s Headless CMS to populate homepage data modules'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Developed in-house design system in tandem with design team using Figma and Style Dictionary'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Established design patterns and best coding practices for frontend team'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Co-led software architecture rounds for interviewing new engineering candidates'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Job'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Job'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'company'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Dictionary.com"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Oakland, Calif. (remote)"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'role'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Senior Software Engineer"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'startDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"August 2021"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'endDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"April 2023"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool written in Next.js'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Implemented WebSockets to enhance the UX performance and feel of Grammar Coach editor'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Migrated Grammar Coach codebase to TypeScript and introduced Redux Toolkit'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Job'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* GLCS */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Job'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'company'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">
-              {'"Great Lakes Consulting Services"'}
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Livonia, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'role'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Software Developer"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'startDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"January 2019"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'endDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"July 2021"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Developed and managed a React with Redux (TypeScript) frontend of an end-to-end budget forecasting application for Trinity Health’s budget team'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Designed an internal dashboard application utilizing Dash/Flask (Python)'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Facilitated the onboarding and training of junior engineers and interns'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Job'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          {/* Logicdrop */}
-          <div className="indented-2">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Job'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'company'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Logicdrop"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'location'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Ferndale, Mich."'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'role'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"Software Developer"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'startDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"April 2016"'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-field">{'endDate'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-string">{'"December 2018"'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Developed multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Collaborated with backend team to integrate Rest APIs using RxJS observables'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-4">
-            <span className="code-annotation">
-              {
-                'Implemented functionality for importing Excel spreadsheets and .CSV files into editable data tables'
-              }
-            </span>
-          </div>
-          <div className="indented-3">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Description'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-operator">{'</'}</span>
-            <span className="code-class">{'Job'}</span>
-            <span className="code-operator">{'>'}</span>
-          </div>
+          {resume.jobs.map((job) => (
+            <React.Fragment key={job.company}>
+              <div className="indented-2">
+                <span className="code-operator">{'<'}</span>
+                <span className="code-class">{'Job'}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'company'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${job.company}"`}</span>
+              </div>
+              <div className="indented-3">
+                <span className="code-field">{'location'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${job.location}"`}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-operator">{'>'}</span>
+              </div>
+              {job.roles.map((role) => (
+                <React.Fragment key={`${job.company}-${role.title}`}>
+                  <div className="indented-3">
+                    <span className="code-operator">{'<'}</span>
+                    <span className="code-class">{'Role'}</span>
+                  </div>
+                  {!role.endDate && (
+                    <div className="indented-4">
+                      <span className="code-field">isCurrent</span>
+                    </div>
+                  )}
+                  <div className="indented-4">
+                    <span className="code-field">{'title'}</span>
+                    <span className="code-operator">{'='}</span>
+                    <span className="code-string">{`"${role.title}"`}</span>
+                  </div>
+                  <div className="indented-4">
+                    <span className="code-field">{'startDate'}</span>
+                    <span className="code-operator">{'='}</span>
+                    <span className="code-string">{`"${role.startDate}"`}</span>
+                  </div>
+                  {role.endDate && (
+                    <div className="indented-4">
+                      <span className="code-field">{'endDate'}</span>
+                      <span className="code-operator">{'='}</span>
+                      <span className="code-string">{`"${role.endDate}"`}</span>
+                    </div>
+                  )}
+                  <div className="indented-3">
+                    <span className="code-operator">{'>'}</span>
+                  </div>
+                  {role.descriptions.map((description) => (
+                    <React.Fragment key={description}>
+                      <div className="indented-4">
+                        <span className="code-operator">{'<'}</span>
+                        <span className="code-class">{'Description'}</span>
+                        <span className="code-operator">{'>'}</span>
+                      </div>
+                      <div className="indented-5">
+                        <span className="code-annotation">{description}</span>
+                      </div>
+                      <div className="indented-4">
+                        <span className="code-operator">{'</'}</span>
+                        <span className="code-class">{'Description'}</span>
+                        <span className="code-operator">{'>'}</span>
+                      </div>
+                    </React.Fragment>
+                  ))}
+                  <div className="indented-3">
+                    <span className="code-operator">{'</'}</span>
+                    <span className="code-class">{'Role'}</span>
+                    <span className="code-operator">{'>'}</span>
+                  </div>
+                </React.Fragment>
+              ))}
+              <div className="indented-2">
+                <span className="code-operator">{'</'}</span>
+                <span className="code-class">{'Job'}</span>
+                <span className="code-operator">{'>'}</span>
+              </div>
+            </React.Fragment>
+          ))}
           <div className="indented-1">
             <span className="code-operator">{'</'}</span>
             <span className="code-class">{'Section'}</span>
@@ -505,7 +179,7 @@ const Resume = () => {
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Section '}</span>
-            <span className="code-field">{'title'}</span>
+            <span className="code-field">{'type'}</span>
             <span className="code-operator">{'='}</span>
             <span className="code-string">{'"Education"'}</span>
             <span className="code-operator">{'>'}</span>
