@@ -10,11 +10,12 @@
       "roles": [
         {
           "descriptions": [
-            "Helped rebuild and redesign Dictionary.com and Thesaurus.com websites, going from multiple applications comprised of various tech stacks to a single, isomorphic React application with a brand new, user-tested UI",
+            "Switched teams to be part of rebuilding and redesigning Dictionary.com and Thesaurus.com websites, going from multiple applications comprised of various tech stacks to a single, isomorphic React application",
             "Wrote integration for Storyblok’s Headless CMS to populate homepage data modules",
             "Developed in-house design system in tandem with design team using Figma and Style Dictionary",
             "Established design patterns and best coding practices for frontend team",
-            "Co-led software architecture rounds for interviewing new engineering candidates"
+            "Led software architecture rounds for interviewing engineering candidates",
+            "Won company Hackathon for co-writing a word puzzle game (\"Ghost\")"
           ],
           "endDate": null,
           "startDate": "April 2023",
@@ -22,8 +23,8 @@
         },
         {
           "descriptions": [
-            "Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool written in Next.js",
-            "Implemented WebSockets to enhance the UX performance and feel of Grammar Coach editor",
+            "Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool",
+            "Implemented WebSockets to enhance the UX and performance of Grammar Coach editor",
             "Migrated Grammar Coach codebase to TypeScript and introduced Redux Toolkit"
           ],
           "endDate": "April 2023",
@@ -92,15 +93,16 @@
     }
   ],
   "skills": [
+    "Agile/Scrum",
     "Angular",
     "CSS3/LESS/SCSS",
     "Cypress/Jest",
-    "ESLint",
+    "ESLint/Prettier",
     "Figma",
     "Git/GitHub/GitLab",
     "GraphQL",
     "HTML5",
-    "Javascript/ES6",
+    "JavaScript/TypeScript",
     "Next.js",
     "Node.js",
     "NPM/Yarn",
@@ -108,7 +110,6 @@
     "Python (Dash/Flask)",
     "React.js",
     "Redux/Redux Toolkit",
-    "TypeScript",
     "Vue.js",
     "Webpack",
     "WebSockets"
