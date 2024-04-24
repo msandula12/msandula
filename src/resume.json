@@ -10,11 +10,12 @@
       "roles": [
         {
           "descriptions": [
-            "Switched teams to be part of rebuilding and redesigning Dictionary.com and Thesaurus.com websites, going from multiple applications comprised of various tech stacks to a single, isomorphic React application",
-            "Wrote integration for Storyblok’s Headless CMS to populate homepage data modules",
-            "Developed in-house design system in tandem with design team using Figma and Style Dictionary",
+            "Key contributor to rebuild and redesign of Dictionary.com and Thesaurus.com, which have over 40 million daily users, going from 5 applications of various tech stacks to a single, isomorphic React application",
+            "Converted REST API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages",
+            "Wrote integration for Storyblok’s Headless CMS to populate website’s static content",
+            "Produced in-house design system in tandem with design team using Figma and Style Dictionary",
             "Established design patterns and best coding practices for frontend team",
-            "Led software architecture rounds for interviewing engineering candidates",
+            "Lead software architecture rounds for interviewing engineering candidates",
             "Won company Hackathon for co-writing a word puzzle game (\"Ghost\")"
           ],
           "endDate": null,
@@ -24,8 +25,8 @@
         {
           "descriptions": [
             "Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool",
-            "Implemented WebSockets to enhance the UX and performance of Grammar Coach editor",
-            "Migrated Grammar Coach codebase to TypeScript and introduced Redux Toolkit"
+            "Improved UX of Grammar Coach editor by implementing WebSockets, which decreased latency by 75 percent",
+            "Migrated Grammar Coach codebase (over 100 components) to TypeScript and introduced Redux Toolkit"
           ],
           "endDate": "April 2023",
           "startDate": "August 2021",
@@ -39,9 +40,9 @@
       "roles": [
         {
           "descriptions": [
-            "Developed and managed a React with Redux (TypeScript) frontend of an end-to-end budget forecasting application for Trinity Health’s budget team",
-            "Designed an internal dashboard application utilizing Dash/Flask (Python)",
-            "Facilitated the onboarding and training of junior engineers and interns"
+            "Developed and managed a React with Redux (TypeScript) frontend of an end-to-end budget forecasting application with millions of data points for Trinity Health’s budget team",
+            "Designed a robust dashboard application with interactive charts and graphs utilizing Dash/Flask (Python)",
+            "Participated in the hiring of junior engineers and interns and facilitated their onboarded and training"
           ],
           "endDate": "July 2021",
           "startDate": "January 2019",
@@ -55,8 +56,8 @@
       "roles": [
         {
           "descriptions": [
-            "Developed multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
-            "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor",
+            "Launched multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
+            "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor comprised of over 20 custom elements",
             "Collaborated with backend team to integrate Rest APIs using RxJS observables",
             "Implemented functionality for importing Excel spreadsheets and .CSV files into editable data tables"
           ],
@@ -76,9 +77,7 @@
     },
     {
       "descriptions": [
-        "Bachelor of Arts in Journalism",
-        "GPA 3.6",
-        "Cum Laude with departmental honors"
+        "Bachelor of Arts in Journalism (Cum Laude with departmental honors)"
       ],
       "graduated": "December 2010",
       "location": "Rochester, Mich.",
