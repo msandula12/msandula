@@ -12,10 +12,10 @@
           "descriptions": [
             "Key contributor to rebuild and redesign of Dictionary.com and Thesaurus.com, which have over 40 million daily users, going from 5 applications of various tech stacks to a single, isomorphic React application",
             "Converted REST API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages",
-            "Wrote integration for Storyblok’s Headless CMS to populate website’s static content",
+            "Wrote integration for Storyblok’s Headless CMS to populate shared data modules",
             "Produced in-house design system in tandem with design team using Figma and Style Dictionary",
             "Established design patterns and best coding practices for frontend team",
-            "Lead software architecture rounds for interviewing engineering candidates",
+            "Designed software architecture round for interviewing engineering candidates",
             "Won company Hackathon for co-writing a word puzzle game (\"Ghost\")"
           ],
           "endDate": null,
