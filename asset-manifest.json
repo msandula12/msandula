@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/msandula/static/css/main.422f75e4.chunk.css",
-    "main.js": "/msandula/static/js/main.a40940a2.chunk.js",
-    "main.js.map": "/msandula/static/js/main.a40940a2.chunk.js.map",
+    "main.js": "/msandula/static/js/main.8983b23e.chunk.js",
+    "main.js.map": "/msandula/static/js/main.8983b23e.chunk.js.map",
     "runtime-main.js": "/msandula/static/js/runtime-main.e32f3902.js",
     "runtime-main.js.map": "/msandula/static/js/runtime-main.e32f3902.js.map",
     "static/js/2.a67ba1db.chunk.js": "/msandula/static/js/2.a67ba1db.chunk.js",
     "static/js/2.a67ba1db.chunk.js.map": "/msandula/static/js/2.a67ba1db.chunk.js.map",
     "index.html": "/msandula/index.html",
-    "precache-manifest.bc4a97ead204b12625a3865e3f6f4bdf.js": "/msandula/precache-manifest.bc4a97ead204b12625a3865e3f6f4bdf.js",
+    "precache-manifest.4280dfc60da9e6d3a7469314f662e9c2.js": "/msandula/precache-manifest.4280dfc60da9e6d3a7469314f662e9c2.js",
     "service-worker.js": "/msandula/service-worker.js",
     "static/css/main.422f75e4.chunk.css.map": "/msandula/static/css/main.422f75e4.chunk.css.map",
     "static/js/2.a67ba1db.chunk.js.LICENSE.txt": "/msandula/static/js/2.a67ba1db.chunk.js.LICENSE.txt",
-    "static/media/mike-sandula-resume.pdf": "/msandula/static/media/mike-sandula-resume.7615e7a1.pdf"
+    "static/media/mike-sandula-resume.pdf": "/msandula/static/media/mike-sandula-resume.4bdc26be.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.e32f3902.js",
     "static/js/2.a67ba1db.chunk.js",
     "static/css/main.422f75e4.chunk.css",
-    "static/js/main.a40940a2.chunk.js"
+    "static/js/main.8983b23e.chunk.js"
   ]
 }
