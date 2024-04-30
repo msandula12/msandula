@@ -79,6 +79,32 @@ const Resume = () => {
             <span className="code-operator">{' />'}</span>
           </div>
 
+          {/* SKILLS */}
+          <div className="indented-1">
+            <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Skills '}</span>
+          </div>
+          <div className="indented-2">
+            <span className="code-field">{'skills'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-field">{'{'}</span>
+            <span className="code-method">{'['}</span>
+          </div>
+          {resume.skills.map((skill, index) => (
+            <div className="indented-3" key={skill}>
+              <span className="code-string">{`"${skill}"${
+                index < resume.skills.length - 1 ? ',' : ''
+              }`}</span>
+            </div>
+          ))}
+          <div className="indented-2">
+            <span className="code-method">{']'}</span>
+            <span className="code-field">{'}'}</span>
+          </div>
+          <div className="indented-1">
+            <span className="code-operator">{'/>'}</span>
+          </div>
+
           {/* EXPERIENCE */}
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
@@ -292,32 +318,6 @@ const Resume = () => {
             <span className="code-operator">{'</'}</span>
             <span className="code-class">{'Section'}</span>
             <span className="code-operator">{'>'}</span>
-          </div>
-
-          {/* SKILLS */}
-          <div className="indented-1">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Skills '}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-field">{'skills'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-field">{'{'}</span>
-            <span className="code-method">{'['}</span>
-          </div>
-          {resume.skills.map((skill, index) => (
-            <div className="indented-3" key={skill}>
-              <span className="code-string">{`"${skill}"${
-                index < resume.skills.length - 1 ? ',' : ''
-              }`}</span>
-            </div>
-          ))}
-          <div className="indented-2">
-            <span className="code-method">{']'}</span>
-            <span className="code-field">{'}'}</span>
-          </div>
-          <div className="indented-1">
-            <span className="code-operator">{'/>'}</span>
           </div>
 
           {/* END */}
