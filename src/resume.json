@@ -3,10 +3,32 @@
   "email": "msandula@gmail.com",
   "github": "msandula12",
   "linkedin": "MikeSandula",
+  "skills": [
+    "Agile/Scrum",
+    "Angular",
+    "CSS/Less/SCSS",
+    "Cypress/Jest",
+    "ESLint/Prettier",
+    "Figma",
+    "Git/GitHub/GitLab",
+    "GraphQL",
+    "HTML",
+    "JavaScript/TypeScript",
+    "Next.js",
+    "Node.js/Express.js",
+    "NPM/Yarn",
+    "Python (Dash/Flask)",
+    "React Testing Library",
+    "React.js",
+    "Redux/Redux Toolkit",
+    "Vue.js",
+    "Webpack",
+    "WebSockets"
+  ],
   "jobs": [
     {
       "company": "Dictionary.com",
-      "location": "Oakland, Calif. (remote)",
+      "location": "Oakland, CA (remote)",
       "roles": [
         {
           "descriptions": [
@@ -36,7 +58,7 @@
     },
     {
       "company": "Great Lakes Consulting Services, Inc.",
-      "location": "Livonia, Mich.",
+      "location": "Livonia, MI",
       "roles": [
         {
           "descriptions": [
@@ -52,7 +74,7 @@
     },
     {
       "company": "Logicdrop",
-      "location": "Ferndale, Mich.",
+      "location": "Ferndale, MI",
       "roles": [
         {
           "descriptions": [
@@ -72,7 +94,7 @@
     {
       "descriptions": ["JavaScript Developer Bootcamp"],
       "graduated": "March 2016",
-      "location": "Detrot, Mich.",
+      "location": "Detrot, MI",
       "place": "Grand Circus"
     },
     {
@@ -80,7 +102,7 @@
         "Bachelor of Arts in Journalism (Cum Laude with departmental honors)"
       ],
       "graduated": "December 2010",
-      "location": "Rochester, Mich.",
+      "location": "Rochester, MI",
       "place": "Oakland University"
     }
   ],
@@ -90,27 +112,5 @@
       "obtained": "February 2024",
       "description": "AWS Certified Cloud Practitioner (CLF-C02)"
     }
-  ],
-  "skills": [
-    "Agile/Scrum",
-    "Angular",
-    "CSS/Less/SCSS",
-    "Cypress/Jest",
-    "ESLint/Prettier",
-    "Figma",
-    "Git/GitHub/GitLab",
-    "GraphQL",
-    "HTML",
-    "JavaScript/TypeScript",
-    "Next.js",
-    "Node.js/Express.js",
-    "NPM/Yarn",
-    "Python (Dash/Flask)",
-    "React Testing Library",
-    "React.js",
-    "Redux/Redux Toolkit",
-    "Vue.js",
-    "Webpack",
-    "WebSockets"
   ]
 }

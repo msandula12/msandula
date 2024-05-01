@@ -9,25 +9,25 @@ import DownloadPDFButton from './DownloadPDFButton';
 import FadeInSection from './FadeInSection';
 
 const Resume = () => {
-  const [showPDFButton, setShowPDFButton] = useState(false);
+  const [showPdfButton, setShowPdfButton] = useState(false);
   const resumePage = createRef();
 
   useEffect(() => {
     const determineIfShouldShowResumeButton = () => {
       if (!resumePage.current) {
-        setShowPDFButton(false);
+        setShowPdfButton(false);
         return;
       }
       const rect = resumePage.current.getBoundingClientRect();
       const { top } = rect;
-      setShowPDFButton(top < 1);
+      setShowPdfButton(top < 1);
     };
     window.addEventListener('scroll', determineIfShouldShowResumeButton);
     return () =>
       window.removeEventListener('scroll', determineIfShouldShowResumeButton);
   }, [resumePage]);
 
-  const downloadPDFButtonTransition = useTransition(showPDFButton, null, {
+  const downloadPDFButtonTransition = useTransition(showPdfButton, null, {
     from: { bottom: 0, right: 32, opacity: 0, position: 'fixed' },
     enter: { bottom: 40, opacity: 1 },
     leave: { bottom: 0, opacity: 0 },
