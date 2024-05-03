@@ -56,6 +56,14 @@ const Resume = () => {
           </div>
           <div className="indented-1">
             <span className="code-operator">{'<'}</span>
+            <span className="code-class">{'Location '}</span>
+            <span className="code-field">{'location'}</span>
+            <span className="code-operator">{'='}</span>
+            <span className="code-string">{`"${resume.location}"`}</span>
+            <span className="code-operator">{' />'}</span>
+          </div>
+          <div className="indented-1">
+            <span className="code-operator">{'<'}</span>
             <span className="code-class">{'Contact '}</span>
             <span className="code-field">{'email'}</span>
             <span className="code-operator">{'='}</span>
@@ -80,30 +88,39 @@ const Resume = () => {
           </div>
 
           {/* SKILLS */}
-          <div className="indented-1">
-            <span className="code-operator">{'<'}</span>
-            <span className="code-class">{'Skills '}</span>
-          </div>
-          <div className="indented-2">
-            <span className="code-field">{'skills'}</span>
-            <span className="code-operator">{'='}</span>
-            <span className="code-field">{'{'}</span>
-            <span className="code-method">{'['}</span>
-          </div>
-          {resume.skills.map((skill, index) => (
-            <div className="indented-3" key={skill}>
-              <span className="code-string">{`"${skill}"${
-                index < resume.skills.length - 1 ? ',' : ''
-              }`}</span>
-            </div>
+          {resume.skills.map(({ category, skills }) => (
+            <React.Fragment key={category}>
+              <div className="indented-1">
+                <span className="code-operator">{'<'}</span>
+                <span className="code-class">{'Skills '}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-field">{'category'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-string">{`"${category}"`}</span>
+              </div>
+              <div className="indented-2">
+                <span className="code-field">{'skills'}</span>
+                <span className="code-operator">{'='}</span>
+                <span className="code-field">{'{'}</span>
+                <span className="code-method">{'['}</span>
+              </div>
+              {skills.map((skill, index) => (
+                <div className="indented-3" key={skill}>
+                  <span className="code-string">{`"${skill}"${
+                    index < resume.skills.length - 1 ? ',' : ''
+                  }`}</span>
+                </div>
+              ))}
+              <div className="indented-2">
+                <span className="code-method">{']'}</span>
+                <span className="code-field">{'}'}</span>
+              </div>
+              <div className="indented-1">
+                <span className="code-operator">{'/>'}</span>
+              </div>
+            </React.Fragment>
           ))}
-          <div className="indented-2">
-            <span className="code-method">{']'}</span>
-            <span className="code-field">{'}'}</span>
-          </div>
-          <div className="indented-1">
-            <span className="code-operator">{'/>'}</span>
-          </div>
 
           {/* EXPERIENCE */}
           <div className="indented-1">

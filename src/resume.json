@@ -1,29 +1,60 @@
 {
   "title": "Software Engineer",
+  "location": "Shelby Township, MI",
   "email": "msandula@gmail.com",
   "github": "msandula12",
   "linkedin": "MikeSandula",
   "skills": [
-    "Agile/Scrum",
-    "Angular",
-    "CSS/Less/SCSS",
-    "Cypress/Jest",
-    "ESLint/Prettier",
-    "Figma",
-    "Git/GitHub/GitLab",
-    "GraphQL",
-    "HTML",
-    "JavaScript/TypeScript",
-    "Next.js",
-    "Node.js/Express.js",
-    "NPM/Yarn",
-    "Python (Dash/Flask)",
-    "React Testing Library",
-    "React.js",
-    "Redux/Redux Toolkit",
-    "Vue.js",
-    "Webpack",
-    "WebSockets"
+    {
+      "category": "Software languages, frameworks, tools",
+      "skills": [
+        "Angular",
+        "CSS/Less/Sass/CSS-in-JS",
+        "Cypress",
+        "ESLint",
+        "Git",
+        "GraphQL",
+        "HTML",
+        "JavaScript",
+        "Jest",
+        "Next.js",
+        "Node.js",
+        "NPM",
+        "Prettier",
+        "Python (Dash/Flask)",
+        "React Testing Library",
+        "React.js",
+        "Redux",
+        "TypeScript",
+        "Vue.js",
+        "Webpack",
+        "WebSockets",
+        "Yarn"
+      ]
+    },
+    {
+      "category": "Applications",
+      "skills": [
+        "Adobe XD",
+        "AWS",
+        "Confluence",
+        "Fastly CDN",
+        "Figma",
+        "GitHub/GitLab",
+        "Jira",
+        "Semaphore"
+      ]
+    },
+    {
+      "category": "Practices",
+      "skills": [
+        "Agile/Scrum",
+        "ARIA/Web Accessibility",
+        "Code Reviews",
+        "Frontend Testing",
+        "Search Engine Optimization (SEO)"
+      ]
+    }
   ],
   "jobs": [
     {
