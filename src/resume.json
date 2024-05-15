@@ -65,7 +65,7 @@
       "roles": [
         {
           "descriptions": [
-            "Key contributor to rebuild and redesign of Dictionary.com and Thesaurus.com, which have over 40 million daily users, going from 5 applications of various tech stacks to a single, isomorphic React application",
+            "Key contributor to rebuild and redesign of Dictionary.com and Thesaurus.com, which have over 40 million daily users, going from 4 applications of various tech stacks to a single, isomorphic React application",
             "Converted REST API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages",
             "Wrote integration for Storyblok’s Headless CMS to populate shared data modules",
             "Produced in-house design system in tandem with design team using Figma and Style Dictionary",
