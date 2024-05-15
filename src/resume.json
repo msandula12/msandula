@@ -79,9 +79,9 @@
         },
         {
           "descriptions": [
-            "Collaborated with product, design, backend, and machine learning teams on Grammar Coach writing tool",
+            "Collaborated with product, design, backend, and machine learning teams in an agile environment",
             "Improved UX of Grammar Coach editor by implementing WebSockets, which decreased latency by 75 percent",
-            "Migrated Grammar Coach codebase (over 100 components) to TypeScript and introduced Redux Toolkit"
+            "Migrated Grammar Coach’s Next.js codebase (with over 100 components) to TypeScript, introduced Redux Toolkit, and more than doubled end-to-end testing coverage with Cypress"
           ],
           "endDate": "April 2023",
           "startDate": "August 2021",
