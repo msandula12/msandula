@@ -291,7 +291,7 @@ const Resume = () => {
             <span className="code-operator">{'>'}</span>
           </div>
           {resume.certifications.map((certification) => (
-            <React.Fragment key={certification.title}>
+            <React.Fragment key={certification.description}>
               <div className="indented-2">
                 <span className="code-operator">{'<'}</span>
                 <span className="code-class">{'Certification'}</span>
