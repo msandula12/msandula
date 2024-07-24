@@ -70,13 +70,11 @@
       "roles": [
         {
           "descriptions": [
-            "Key contributor to rebuild and redesign of Dictionary.com and Thesaurus.com, which have over 40 million daily users, going from 4 applications of various tech stacks to a single, isomorphic React application",
-            "Converted REST API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages",
-            "Wrote integration for Storyblok’s Headless CMS to populate shared data modules",
-            "Produced in-house design system in tandem with design team using Ariakit, Figma, and Style Dictionary",
-            "Established design patterns and best coding practices for frontend team",
-            "Designed software architecture round for interviewing engineering candidates",
-            "Won company Hackathon for co-writing a word puzzle game (\"Ghost\")"
+            "Led the redesign effort for Dictionary.com and Thesaurus.com websites, serving over 40 million daily users",
+            "Developed in-house design system in tandem with the design team using Figma, Ariakit, and Style Dictionary",
+            "Transformed Rest API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages, streamlining 5+ API calls into a single call that only included necessary data",
+            "Implemented Storyblok’s Headless CMS to populate shared data modules, enhancing content creation and scheduling efficiency for the content team",
+            "Formulated a design patterns document to establish best coding practices across the engineering team"
           ],
           "endDate": null,
           "startDate": "April 2023",
@@ -85,8 +83,8 @@
         {
           "descriptions": [
             "Collaborated with product, design, backend, and machine learning teams in an agile environment",
-            "Improved UX of Grammar Coach editor by implementing WebSockets, which decreased latency by 75 percent",
-            "Migrated Grammar Coach’s Next.js codebase (with over 100 components) to TypeScript, introduced Redux Toolkit, and more than doubled end-to-end testing coverage with Cypress"
+            "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, reducing latency by 75 percent",
+            "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress"
           ],
           "endDate": "April 2023",
           "startDate": "August 2021",
@@ -100,9 +98,9 @@
       "roles": [
         {
           "descriptions": [
-            "Developed and managed a React with Redux (TypeScript) frontend of an end-to-end budget forecasting application with millions of data points for Trinity Health’s budget team",
-            "Designed a robust dashboard application with interactive charts and graphs utilizing Dash/Flask (Python)",
-            "Participated in the hiring of junior engineers and interns and facilitated their onboarded and training"
+            "Developed and managed a React with Redux and TypeScript frontend of an end-to-end budget forecasting application with millions of data records for Trinity Health’s budget team",
+            "Designed a multi-page dashboard application with interactive charts and graphs with Dash/Flask (Python)",
+            "Contributed to the recruitment and mentoring of junior engineers and interns, facilitating their seamless onboarding and training processes"
           ],
           "endDate": "July 2021",
           "startDate": "January 2019",
@@ -118,8 +116,8 @@
           "descriptions": [
             "Launched multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
             "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor comprised of over 20 custom elements",
-            "Collaborated with backend team to integrate Rest APIs using RxJS observables",
-            "Implemented functionality for importing Excel spreadsheets and .CSV files into editable data tables"
+            "Utilized RxJS observables to consume Rest APIs that provided real-time feedback to users",
+            "Implemented robust functionality for importing Excel spreadsheets and .CSV files into editable data tables"
           ],
           "endDate": "December 2018",
           "startDate": "April 2016",
