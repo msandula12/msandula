@@ -70,11 +70,11 @@
       "roles": [
         {
           "descriptions": [
-            "Led the redesign effort for Dictionary.com and Thesaurus.com websites, serving over 40 million daily users",
-            "Developed in-house design system in tandem with the design team using Figma, Ariakit, and Style Dictionary",
+            "Lead engineer for redesign of Dictionary.com and Thesaurus.com websites, serving 40 million daily users",
+            "Developed in-house design system in tandem with design team using Figma, Ariakit, and Style Dictionary",
             "Transformed Rest API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages, streamlining 5+ API calls into a single call that only included necessary data",
             "Implemented Storyblok’s Headless CMS to populate shared data modules, enhancing content creation and scheduling efficiency for the content team",
-            "Formulated a design patterns document to establish best coding practices across the engineering team"
+            "Formulated a design patterns document to establish best coding practices across engineering teams"
           ],
           "endDate": null,
           "startDate": "April 2023",
@@ -82,9 +82,9 @@
         },
         {
           "descriptions": [
-            "Collaborated with product, design, backend, and machine learning teams in an agile environment",
             "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, reducing latency by 75 percent",
-            "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress"
+            "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress",
+            "Collaborated with product, design, backend, and machine learning teams in an agile environment"
           ],
           "endDate": "April 2023",
           "startDate": "August 2021",
@@ -94,11 +94,11 @@
     },
     {
       "company": "Great Lakes Consulting Services, Inc.",
-      "location": "Livonia, MI",
+      "location": "Livonia, MI (hybrid)",
       "roles": [
         {
           "descriptions": [
-            "Developed and managed a React with Redux and TypeScript frontend of an end-to-end budget forecasting application with millions of data records for Trinity Health’s budget team",
+            "Developed and managed a React with Redux and TypeScript frontend of an end-to-end budget forecasting application with millions of hospital records for Trinity Health’s budget team",
             "Designed a multi-page dashboard application with interactive charts and graphs with Dash/Flask (Python)",
             "Contributed to the recruitment and mentoring of junior engineers and interns, facilitating their seamless onboarding and training processes"
           ],
@@ -110,7 +110,7 @@
     },
     {
       "company": "Logicdrop",
-      "location": "Ferndale, MI",
+      "location": "Ferndale, MI (hybrid)",
       "roles": [
         {
           "descriptions": [
