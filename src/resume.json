@@ -10,11 +10,11 @@
       "skills": [
         "Angular",
         "Ariakit",
-        "CSS/Less/Sass",
+        "CSS/Less/Sass/CSS-in-JS",
         "Cypress",
-        "D3.js",
         "Emotion (CSS-in-JS)",
         "ESLint",
+        "Express.js",
         "Git",
         "GraphQL",
         "HTML",
@@ -72,7 +72,7 @@
           "descriptions": [
             "Lead engineer for redesign of Dictionary.com and Thesaurus.com websites, serving 40 million daily users",
             "Developed in-house design system in tandem with design team using Figma, Ariakit, and Style Dictionary",
-            "Transformed Rest API endpoint consumption to Apollo GraphQL for Dictionary and Thesaurus browse pages, streamlining 5+ API calls into a single call that only included necessary data",
+            "Converted 5+ RESTful API calls into a single Apollo GraphQL query that retrieved only the necessary data for populating Dictionary and Thesaurus browse pages",
             "Implemented Storyblok’s Headless CMS to populate shared data modules, enhancing content creation and scheduling efficiency for the content team",
             "Formulated a design patterns document to establish best coding practices across engineering teams"
           ],
@@ -82,7 +82,7 @@
         },
         {
           "descriptions": [
-            "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, reducing latency by 75 percent",
+            "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, which reduced the average payload size by 90 percent and decreased API latency by 75 percent",
             "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress",
             "Collaborated with product, design, backend, and machine learning teams in an agile environment"
           ],
@@ -116,7 +116,7 @@
           "descriptions": [
             "Launched multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
             "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor comprised of over 20 custom elements",
-            "Utilized RxJS observables to consume Rest APIs that provided real-time feedback to users",
+            "Utilized RxJS observables to provide real-time progress updates to users uploading large documents",
             "Implemented robust functionality for importing Excel spreadsheets and .CSV files into editable data tables"
           ],
           "endDate": "December 2018",
